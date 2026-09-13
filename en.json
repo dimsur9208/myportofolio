@@ -1,0 +1,215 @@
+{
+    "nav": {
+        "about": "My Profile",
+        "education": "Education",
+        "experience": "Experience",
+        "skills": "Skills",
+        "certificates": "Certificate",
+        "projects": "Project",
+        "contact": "Contact"
+    },
+    "hero": {
+        "badge": "MY PROFILE",
+        "title_prefix": "Hello everyone! I'm",
+        "name": "Dimas Surya Saputra",
+        "description": "I am a graduate of Computer & Network Engineering, and currently a Telecommunications Engineering student at PNJ who loves learning new things and exploring technology, especially in the field of telecommunications. I have experience using software applications such as Cisco Packet Tracer, Winbox, PuTTY, Wireshark, Virtual Studio Code, Arduino IDE, Virtualbox, Multisim, EasyEDA, KiCad, Protel, AutoCAD, SketchUp, Axence NetTools, CST Studio Suite, MATLAB, and Radio Mobile, both in academic project assignments and organizational activities. I am capable of working well in teams, managing time effectively, and thinking logically to solve problems.",
+        "terminal_title": "I am interested in:",
+        "terminal_content": [
+            "IT Support, Computer & Network Engineer, Technician, Computer Hardware Assembly, Mikrotik, IoT (Arduino/ESP32), Telecommunication Engineer, and Cyber Security."
+        ]
+    },
+    "education": {
+        "title": "Education",
+        "items": [
+            {
+                "duration": "2024 - Present",
+                "institution": "Jakarta State Polytechnic (PNJ) - Depok",
+                "detail_title": "Associate Degree - Telecommunications Engineering | Current GPA: 3.50",
+                "points": [
+                    "Actively studying FTTx network design, local and cellular network design, wired and wireless telecommunication systems, analog and digital signal processing, and microcontroller-based IoT device development using Arduino, ESP, and Raspberry Pi.",
+                    "Active member and administrator of the Student Study Group organization (KSM Psychorobotic)."
+                ]
+            },
+            {
+                "duration": "2021 - 2024 (GRADUATED)",
+                "institution": "SMK Negeri 7 Jakarta - East Jakarta",
+                "detail_title": "Average Report Grade: 85.11",
+                "points": [
+                    "Completed various practical modules and network simulations (LAN, MAN, WAN, PBX, Mikrotik).",
+                    "Completed installation modules in Debian OS (Web Server, Web Hosting, Ansible, etc.).",
+                    "Learned and completed HTML, CSS, and JavaScript web programming modules.",
+                    "Achieved 2nd Runner-Up in the Cyber Security Competition (Team category) at East Jakarta 1 level.",
+                    "Participated in the Ready4Sec Certification organized by InfraDigital Foundation (IDF) x Microsoft.",
+                    "Designed and implemented computer networks."
+                ]
+            },
+            {
+                "duration": "2018 - 2021 (GRADUATED)",
+                "institution": "SMP Negeri 117 Jakarta - East Jakarta",
+                "detail_title": "Average Report Grade: 91.5",
+                "points": [
+                    "Actively participated in school classes."
+                ]
+            },
+            {
+                "duration": "2012 - 2018 (GRADUATED)",
+                "institution": "SDN Pondok Bambu 04 - East Jakarta",
+                "detail_title": "Average Report Grade: 80.20 | National Exam Average: 81.30",
+                "points": [
+                    "Actively participated in school classes.",
+                    "Achieved 1st Place for Highest National Exam Score at SDN Pondok Bambu 04 with a total score of 25.64 and average national exam score of 85.46."
+                ]
+            }
+        ]
+    },
+    "experience": {
+        "title": "Experience",
+        "items": [
+            {
+                "company": "PT. Angkasa Pura Indonesia (Halim PK)",
+                "role": "INTERN | IT Facility Maintenance",
+                "duration": "August 3rd, 2026 - Present",
+                "jobdesk_title": "Jobdesk:",
+                "points": [
+                    "Perform maintenance of electronics, IT, and other operational facilities in the airport area.",
+                    "Support network operations and computer equipment.",
+                    "Conduct routine checks on hardware and software.",
+                    "Assist in handling local network troubleshooting.",
+                    "Manage IT equipment inventory documentation.",
+                    "Coordinate with the technical team for device repairs.",
+                    "Execute telecommunication support system maintenance tasks."
+                ]
+            },
+            {
+                "company": "PT. Zyrexindo Mandiri Buana Tbk.",
+                "role": "FREELANCE / DAILY WORKER | Assembly Engineer",
+                "duration": "December 28th - 31th, 2025",
+                "jobdesk_title": "Jobdesk:",
+                "points": [
+                    "Assembled hardware and laptops in accordance with procedures/SOP and strict Quality Control (QC) checks.",
+                    "Capable of performing repetitive tasks, including component installation, cable connection, and packaging techniques to meet daily production targets.",
+                    "Able to operate specialized equipment and electric screwdrivers correctly and carefully to prevent damage to sensitive electronic components.",
+                    "Capable of inspecting assembled units according to procedures with high precision to identify defects or non-conformities before moving to the next production stage.",
+                    "Able to work with discipline, focus, high precision, and speed while ensuring a safe and tidy workspace."
+                ]
+            },
+            {
+                "company": "Ministry of Education, Culture, Research, and Technology (Kemendikbudristek)",
+                "role": "INTERN | IT Support",
+                "duration": "October 3rd, 2022 - March 31st, 2023",
+                "jobdesk_title": "Jobdesk:",
+                "points": [
+                    "Repaired employees' laptops and PCs.",
+                    "Installed Windows OS on employees' laptops and PCs.",
+                    "Installed OS on servers.",
+                    "Configured laptops or PCs to employees' and staff printers.",
+                    "Configured server networks and CCTV systems.",
+                    "Configured monitor setups in the courtroom.",
+                    "Installed tools such as Microsoft Office, Nitro (PDF Reader), and device drivers (printer drivers and other peripherals)."
+                ]
+            }
+        ]
+    },
+    "skills": {
+        "title": "Main Skills",
+        "items": [
+            { "title": "Fiber Optic & FTTx", "description": "FTTH/FTTB planning, Link Budget, G.652D cable specifications, and Ring/Point-to-Point topology design." },
+            { "title": "IoT & Embedded System", "description": "ESP32-C3 microcontroller programming, sensor integration, mDNS protocol implementation, and BLE connectivity." },
+            { "title": "Antenna Engineering", "description": "Design of 2.4/5 GHz microstrip antennas (Loop/Square ring) and RF simulation using CST Studio Suite." },
+            { "title": "Signal Processing", "description": "Telecommunication simulation using MATLAB, Trellis diagram analysis, and Analog-to-Digital Conversion (ADC) calculations." },
+            { "title": "Routing & Switching", "description": "Configuration of BGP, OSPF, VLAN, and STP using Cisco, MikroTik, and Juniper devices." },
+            { "title": "Web Dashboard UI", "description": "Development of local domain-based HTML/CSS interfaces for smart device control and IoT management." },
+            { "title": "Time Synchronization", "description": "Integration of high-precision time systems using Network Time Protocol (NTP) without external RTC modules." },
+            { "title": "3D Casing Design", "description": "Visualization and chassis design of electronic devices (digital clock casing, IoT modules) using AutoCAD & SketchUp." },
+            { "title": "Network Security", "description": "Next-Gen Firewall implementation, VPN management (IPsec/SSL), ACL configuration, and Intrusion Detection." },
+            { "title": "Hardware Troubleshooting", "description": "Assembly, PC electrical repair, PCB layout design (EasyEDA/KiCad), and module integration." },
+            { "title": "Cloud Networking", "description": "Virtual Private Cloud architecture design, DirectConnect, and Transit Gateway for hybrid infrastructure integration." },
+            { "title": "Monitoring & Automation", "description": "Real-time IT infrastructure monitoring with Zabbix/PRTG and script-based automation integration." }
+        ]
+    },
+    "certificates": {
+        "title": "Certificate",
+        "achievement_title": "My Achievement",
+        "training_title": "Training & Organization",
+        "achievements": [
+            {
+                "title": "2nd Runner-Up - Cyber Security Competition (East Jakarta 1 Level)",
+                "author": "by LKS SMK",
+                "duration": "August 2023 | CERTIFIED",
+                "description": "Successfully designed and implemented an NTP-based Smart Digital Clock project and the \"Lampu Sein ESP32-C3 Core\" IoT control system with custom interface standards.",
+                "tags": ["Cyber Security", "Networking", "Installation & Configuration"]
+            },
+            {
+                "title": "Ministry Internship Certificate - IT Support",
+                "author": "by Kemendikbudristek",
+                "duration": "April 2023 | CERTIFIED",
+                "description": "Achieved satisfactory results in independent PC hardware assembly and advanced router configuration for Local Area Network (LAN) topologies.",
+                "tags": ["IT Support", "Hardware & Software", "Installation & Configuration"]
+            },
+            {
+                "title": "BNSP Competency Certificate in Computer & Network Engineering",
+                "author": "by LSP SMK Negeri 7 Jakarta",
+                "duration": "May 2024 (valid for 3 Years) | CERTIFIED",
+                "description": "Developed link budget schemes and high-density fiber optic network topologies recognized in network design course evaluations.",
+                "tags": ["Networking", "Networking Plaining", "Mikrotik", "Cisco Packet Tracer", "Configuration", "LAN"]
+            },
+            {
+                "title": "1st Place Highest National Exam Score across SDN Pondok Bambu 04",
+                "author": "by SDN Pondok Bambu 04",
+                "duration": "June 2018 | CERTIFIED",
+                "description": "Completed dual-band parameter simulations (2.4/5 GHz) using CST Studio Suite with optimal return loss performance.",
+                "tags": ["UN", "USBN"]
+            }
+        ],
+        "trainings": [
+            {
+                "title": "Ready4Security Indonesia Training Certificate (August - September 2023)",
+                "author": "by InfraDigital Foundation (IDF) x Microsoft",
+                "duration": "September 2023 | CERTIFIED",
+                "description": "Participated in technical training series related to Link Budget calculations, fiber optic cable splicing, and telecommunication measuring instrument operations.",
+                "tags": ["Cyber Security", "Training", "IDF x Microsoft"]
+            },
+            {
+                "title": "MATLAB Onramp Training Certificate",
+                "author": "by MATLAB",
+                "duration": "April 2026 | CERTIFIED",
+                "description": "Intensive training on dual-band microstrip antenna design (2.4 GHz & 5 GHz) and S-parameter analysis (Return Loss / VSWR).",
+                "tags": ["Digital Signal Processing", "Training", "MATLAB"]
+            },
+            {
+                "title": "Active Membership Certificate in KSM Psychorobotic (2025 Period)",
+                "author": "by KSM Psychorobotic",
+                "duration": "June 2026 | CERTIFIED",
+                "description": "Actively involved in telecommunication engineering committees and microcontroller-based hardware project development teamwork.",
+                "tags": ["KSM Psychorobotic", "Microcontroler", "ESP32", "Organization", "PNJ"]
+            }
+        ]
+    },
+    "projects": {
+        "title": "My Project",
+        "items": [
+            { "title": "Smart Digital Clock (NTP)", "description": "ESP32-C3 based digital clock synchronized via Network Time Protocol. Uses a 5x8 pattern MD_Parola LED matrix with a continuous flashing alarm feature when the timer expires.", "tags": ["ESP32-C3", "NTP", "Dot Matrix"] },
+            { "title": "Lampu Sein ESP32C3 Core", "description": "Local web-based interactive vehicle turn signal control system. Equipped with a custom dashboard UI featuring capsule-shaped \"Play\" and \"Pause\" buttons with symmetrical size precision.", "tags": ["HTML/CSS", "IoT Web", "mDNS"] },
+            { "title": "Dual-Band Microstrip Antenna", "description": "Calculation and simulation of loop antennas for wireless communication applications (Wi-Fi) operating stably across two frequencies: 2.4 GHz and 5 GHz.", "tags": ["CST Studio", "RF Engineering"] },
+            { "title": "MATLAB ADC & Trellis Analysis", "description": "Development of MATLAB syntax to simulate telecommunication signal processing, covering sampling, ADC quantization, and Trellis diagram visualization.", "tags": ["MATLAB", "Signal Processing"] },
+            { "title": "High-Density FTTx Design", "description": "Fiber optic network topology design for dense areas (FTTH/FTTB) with in-depth Link Budget calculations and specification selection for Ducts and G.652D.", "tags": ["Fiber Optic", "Network Planning"] },
+            { "title": "Enterprise Data Center Migration", "description": "Migrated physical infrastructure to an enterprise-grade High Availability (HA) architecture with zero operational downtime.", "tags": ["Cisco Nexus", "BGP"] },
+            { "title": "Multi-Branch SD-WAN", "description": "Connected networks across branch offices with full IPsec encryption implementation and centralized load balancing traffic distribution management.", "tags": ["MikroTik", "IPsec VPN"] },
+            {
+                "title": "Security Audit & Hardening",
+                "description": "Performed penetration testing on internal architecture, port security management, and strict authentication implementation using Radius/802.1X protocols.",
+                "tags": ["Wireshark", "802.1X"]
+            },
+            { "title": "3D Modular IoT Enclosure", "description": "3D modeling and layout design of enclosures for microcontroller component integration with precise DC and USB port placement on the electronic chassis.", "tags": ["AutoCAD", "Hardware Design"] },
+            { "title": "Automated Environment Monitoring", "description": "Implementation of environmental sensor data readings transmitted via telemetry to a central server for real-time dashboard chart display.", "tags": ["Telemetry", "Grafana"] },
+            { "title": "BLE Smart Home Controller", "description": "Short-range smart home ecosystem design using low-power Bluetooth Low Energy (BLE) transmission for light switch actuators.", "tags": ["BLE", "Smart Home"] },
+            { "title": "PCB Layout Engineering", "description": "Translating jumper wire circuit prototypes (breadboards) into double-layer printed circuit layout designs using EasyEDA/KiCad software.", "tags": ["EasyEDA", "PCB Design"] }
+        ]
+    },
+    "footer": {
+        "phone": "085884588821",
+        "email": "dimsursap23@gmail.com",
+        "linkedin": "Dimas Surya Saputra (linkedin.com/in/dimas-surya-saputra-b4922b285)",
+        "copyright": "&copy; 2026 Dimas Surya Saputra - Portofolio"
+    }
+}
