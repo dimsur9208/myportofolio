@@ -138,18 +138,115 @@ document.addEventListener("DOMContentLoaded", () => {
             "skills": {
                 "title": "Keahlian Saya",
                 "items": [
-                    { "title": "Teknik Komputer & Jaringan", "description": "Perencanaan Membuat perancangan dan implementasi jaringan komputer, mampu mengkonfigurasi routing & switching jaringan, mengkonfigurasi PABX, menguasai pengalamatan IP." },
-                    { "title": "Instalasi Perangkat Keras & Perangkat Lunak", "description": "Pemrograman mikrokontroler ESP32-C3, integrasi sensor, implementasi protokol mDNS, dan konektivitas BLE." },
-                    { "title": "Merakit Perangkat Keras Komputer", "description": "Perancangan antena mikrostrip 2.4/5 GHz (Loop/Square ring) serta simulasi RF menggunakan CST Studio Suite." },
-                    { "title": "Memecah Masalah Komputer & Jaringan", "description": "Simulasi telekomunikasi menggunakan MATLAB, analisa diagram Trellis, dan proses perhitungan Analog-to-Digital (ADC)." },
-                    { "title": "Routing & Switching", "description": "Konfigurasi BGP, OSPF, VLAN, dan STP menggunakan perangkat Cisco, MikroTik, dan Juniper." },
-                    { "title": "Pemrograman", "description": "Pengembangan antarmuka HTML/CSS berbasis domain lokal untuk kontrol perangkat cerdas dan manajemen IoT." },
-                    { "title": "Keamanan Siber", "description": "Integrasi sistem presisi waktu memanfaatkan Network Time Protocol (NTP) tanpa modul RTC eksternal." },
-                    { "title": "3D Casing Design", "description": "Visualisasi dan desain sasis perangkat elektronik (casing jam digital, modul IoT) menggunakan AutoCAD & SketchUp." },
-                    { "title": "Network Security", "description": "Implementasi Next-Gen Firewall, manajemen VPN (IPsec/SSL), konfigurasi ACL, dan Intrusion Detection." },
-                    { "title": "Software & Hardware Troubleshooting", "description": "Perakitan, perbaikan kelistrikan PC, perancangan tata letak PCB (EasyEDA/KiCad), dan integrasi modul." },
-                    { "title": "Cloud Networking", "description": "Desain arsitektur Virtual Private Cloud, DirectConnect, dan Transit Gateway untuk integrasi infrastruktur hibrida." },
-                    { "title": "Monitoring & Automation", "description": "Pemantauan real-time infrastruktur IT dengan Zabbix/PRTG dan integrasi otomasi berbasis script." }
+                    {
+                        "title": "Teknik Komputer dan Jaringan",
+                        "tools": [
+                            { "name": "Cisco Packet Tracer", "logo": "/All Dokumen/img/cisco.png" },
+                            { "name": "Mikrotik", "logo": "/All Dokumen/img/mikrotik.png" },
+                            { "name": "Trixbox", "logo": "/All Dokumen/img/trixbox.png" },
+                            { "name": "Debian", "logo": "/All Dokumen/img/debian.png" },
+                            { "name": "VirtualBox", "logo": "/All Dokumen/img/virtualbox.png" },
+                            { "name": "Windows", "logo": "/All Dokumen/img/windows.png" },
+                            { "name": "PuTTY", "logo": "/All Dokumen/img/putty.png" },
+                            { "name": "TP-Link", "logo": "/All Dokumen/img/tplink.png" }
+                        ]
+                    },
+                    {
+                        "title": "Teknik Telekomunikasi",
+                        "tools": [
+                            { "name": "Axcence NetTools", "logo": "/All Dokumen/img/nettools.png" },
+                            { "name": "Radio Mobile", "logo": "/All Dokumen/img/radiomobile.png" },
+                            { "name": "Mikrotik", "logo": "/All Dokumen/img/mikrotik.png" },
+                            { "name": "Google Earth", "logo": "/All Dokumen/img/gearthpro.png" },
+                            { "name": "Fiber Optik", "logo": "/All Dokumen/img/fo.png" },
+                            { "name": "Jaringan Lokal (LAN, MAN, WAN)", "logo": "" }
+                        ]
+                    },
+                    {
+                        "title": "Web Server & Pemrograman",
+                        "tools": [
+                            { "name": "Debian dan Ubuntu", "logo": "/All Dokumen/img/ubuntu.png" },
+                            { "name": "Apache2", "logo": "/All Dokumen/img/apache2.png" },
+                            { "name": "HTML", "logo": "/All Dokumen/img/html.png" },
+                            { "name": "CSS", "logo": "/All Dokumen/img/css.png" },
+                            { "name": "JavaScript", "logo": "/All Dokumen/img/javascript.png" },
+                            { "name": "Python", "logo": "/All Dokumen/img/python.png" }
+                        ]
+                    },
+                    {
+                        "title": "Pengalamatan IP Jaringan",
+                        "tools": [
+                            { "name": "Mikrotik", "logo": "/All Dokumen/img/mikrotik.png" },
+                            { "name": "Router", "logo": "/All Dokumen/img/router.png" },
+                            { "name": "Access Point", "logo": "/All Dokumen/img/ap.png" },
+                            { "name": "PC", "logo": "/All Dokumen/img/pc.png" },
+                            { "name": "Jaringan Lokal (LAN, MAN, WAN)", "logo": "" }
+                        ]
+                    },
+                    {
+                        "title": "Keamanan Siber",
+                        "tools": [
+                            { "name": "Cent OS", "logo": "/All Dokumen/img/centos.png" },
+                            { "name": "Kali Linux", "logo": "/All Dokumen/img/kalilinux.png" },
+                            { "name": "VirtualBox", "logo": "/All Dokumen/img/virtualbox.png" },
+                            { "name": "PuTTY", "logo": "/All Dokumen/img/putty.png" }
+                        ]
+                    },
+                    {
+                        "title": "Routing & Switching",
+                        "tools": [
+                            { "name": "Cisco packet tracer & Cisco", "logo": "/All Dokumen/img/cisco.png" },
+                            { "name": "Mikrotik dan Winbox", "logo": "/All Dokumen/img/mikrotik.png" },
+                            { "name": "Debian dan Windows", "logo": "/All Dokumen/img/debian.png" },
+                            { "name": "TP-Link", "logo": "/All Dokumen/img/tplink.png" },
+                            { "name": "Tenda", "logo": "/All Dokumen/img/tenda.png" }
+                        ]
+                    },
+                    {
+                        "title": "Perencanaan Jaringan Telekomunikasi",
+                        "tools": [
+                            { "name": "Cisco", "logo": "/All Dokumen/img/cisco.png" },
+                            { "name": "Mikrotik dan Winbox", "logo": "/All Dokumen/img/mikrotik.png" },
+                            { "name": "Router", "logo": "/All Dokumen/img/router.png" },
+                            { "name": "Access Point", "logo": "/All Dokumen/img/ap.png" },
+                            { "name": "Fiber Optik", "logo": "/All Dokumen/img/fo.png" },
+                            { "name": "Google Earth", "logo": "/All Dokumen/img/gearthpro.png" },
+                            { "name": "Radio Mobile", "logo": "/All Dokumen/img/radiomobile.png" }
+                        ]
+                    },
+                    {
+                        "title": "Desain Elektronika, Desain PCB & Simulasi",
+                        "tools": [
+                            { "name": "Protel", "logo": "/All Dokumen/img/protel.png" },
+                            { "name": "AutoCAD", "logo": "/All Dokumen/img/autocad.png" },
+                            { "name": "SketchUp", "logo": "/All Dokumen/img/sketchup.png" },
+                            { "name": "KiCad", "logo": "/All Dokumen/img/kicad.png" },
+                            { "name": "EasyEDA", "logo": "/All Dokumen/img/easyeda.png" },
+                            { "name": "CST Studio", "logo": "/All Dokumen/img/cst.png" }
+                        ]
+                    },
+                    {
+                        "title": "Mikrokontroler & IoT",
+                        "tools": [
+                            { "name": "Arduino", "logo": "/All Dokumen/img/arduino.png" },
+                            { "name": "ESP32", "logo": "/All Dokumen/img/esp.png" },
+                            { "name": "Raspberry Pi", "logo": "/All Dokumen/img/raspi.png" }
+                        ]
+                    },
+                    {
+                        "title": "Perakitan Perangkat Keras & Lunak",
+                        "tools": [
+                            { "name": "", "logo": "fa-microchip" },
+                            { "name": "", "logo": "fa-screwdriver-wrench" },
+                            { "name": "", "logo": "fa-desktop" }
+                        ]
+                    },
+                    {
+                        "title": "Pemrosesan Sinyal Digital",
+                        "tools": [
+                            { "name": "MATLAB", "logo": "/All Dokumen/img/matlab.png" }
+                        ]
+                    }
                 ]
             },
             "certificates": {
@@ -347,20 +444,115 @@ document.addEventListener("DOMContentLoaded", () => {
                 ]
             },
             "skills": {
-                "title": "Main Skills",
+                "title": "My Skills",
                 "items": [
-                    { "title": "Fiber Optic & FTTx", "description": "FTTH/FTTB planning, Link Budget, G.652D cable specifications, and Ring/Point-to-Point topology design." },
-                    { "title": "IoT & Embedded System", "description": "ESP32-C3 microcontroller programming, sensor integration, mDNS protocol implementation, and BLE connectivity." },
-                    { "title": "Antenna Engineering", "description": "Design of 2.4/5 GHz microstrip antennas (Loop/Square ring) and RF simulation using CST Studio Suite." },
-                    { "title": "Signal Processing", "description": "Telecommunication simulation using MATLAB, Trellis diagram analysis, and Analog-to-Digital Conversion (ADC) calculations." },
-                    { "title": "Routing & Switching", "description": "Configuration of BGP, OSPF, VLAN, and STP using Cisco, MikroTik, and Juniper devices." },
-                    { "title": "Web Dashboard UI", "description": "Development of local domain-based HTML/CSS interfaces for smart device control and IoT management." },
-                    { "title": "Time Synchronization", "description": "Integration of high-precision time systems using Network Time Protocol (NTP) without external RTC modules." },
-                    { "title": "3D Casing Design", "description": "Visualization and chassis design of electronic devices (digital clock casing, IoT modules) using AutoCAD & SketchUp." },
-                    { "title": "Network Security", "description": "Next-Gen Firewall implementation, VPN management (IPsec/SSL), ACL configuration, and Intrusion Detection." },
-                    { "title": "Hardware Troubleshooting", "description": "Assembly, PC electrical repair, PCB layout design (EasyEDA/KiCad), and module integration." },
-                    { "title": "Cloud Networking", "description": "Virtual Private Cloud architecture design, DirectConnect, and Transit Gateway for hybrid infrastructure integration." },
-                    { "title": "Monitoring & Automation", "description": "Real-time IT infrastructure monitoring with Zabbix/PRTG and script-based automation integration." }
+                    {
+                        "title": "Computer & Network Engineering",
+                        "tools": [
+                            { "name": "Cisco packet tracer", "logo": "cisco.png" },
+                            { "name": "Mikrotik & Winbox", "logo": "mikrotik.png" },
+                            { "name": "Trixbox", "logo": "trixbox.png" },
+                            { "name": "Debian & Windows", "logo": "os.png" },
+                            { "name": "VirtualBox", "logo": "virtualbox.png" },
+                            { "name": "PuTTY", "logo": "putty.png" },
+                            { "name": "TP-Link", "logo": "tplink.png" }
+                        ]
+                    },
+                    {
+                        "title": "Telecommunication Engineering",
+                        "tools": [
+                            { "name": "Axcence NetTools", "logo": "axcence.png" },
+                            { "name": "Radio Mobile", "logo": "radiomobile.png" },
+                            { "name": "Mikrotik", "logo": "mikrotik.png" },
+                            { "name": "Google Earth", "logo": "googleearth.png" },
+                            { "name": "Fiber Optic", "logo": "" },
+                            { "name": "Local Network (LAN, MAN, WAN)", "logo": "" }
+                        ]
+                    },
+                    {
+                        "title": "Web Server & Programming",
+                        "tools": [
+                            { "name": "Debian & Ubuntu", "logo": "ubuntu.png" },
+                            { "name": "Apache2", "logo": "apache.png" },
+                            { "name": "HTML", "logo": "html.png" },
+                            { "name": "CSS", "logo": "css.png" },
+                            { "name": "JavaScript", "logo": "javascript.png" },
+                            { "name": "Python", "logo": "python.png" }
+                        ]
+                    },
+                    {
+                        "title": "Network IP Addressing",
+                        "tools": [
+                            { "name": "Mikrotik", "logo": "mikrotik.png" },
+                            { "name": "Router", "logo": "router.png" },
+                            { "name": "Access Point", "logo": "accesspoint.png" },
+                            { "name": "PC", "logo": "pc.png" },
+                            { "name": "Local Network", "logo": "" }
+                        ]
+                    },
+                    {
+                        "title": "Cyber Security",
+                        "tools": [
+                            { "name": "Cent OS", "logo": "centos.png" },
+                            { "name": "Kali Linux", "logo": "kalilinux.png" },
+                            { "name": "VirtualBox", "logo": "virtualbox.png" },
+                            { "name": "PuTTY", "logo": "putty.png" }
+                        ]
+                    },
+                    {
+                        "title": "Routing & Switching",
+                        "tools": [
+                            { "name": "Cisco & Packet Tracer", "logo": "cisco.png" },
+                            { "name": "Mikrotik & Winbox", "logo": "mikrotik.png" },
+                            { "name": "Debian & Windows", "logo": "os.png" },
+                            { "name": "TP-Link", "logo": "tplink.png" },
+                            { "name": "Tenda", "logo": "tenda.png" }
+                        ]
+                    },
+                    {
+                        "title": "Network & Telecom Planning",
+                        "tools": [
+                            { "name": "Cisco", "logo": "cisco.png" },
+                            { "name": "Mikrotik & Winbox", "logo": "mikrotik.png" },
+                            { "name": "Router", "logo": "router.png" },
+                            { "name": "Access Point", "logo": "accesspoint.png" },
+                            { "name": "Fiber Optic", "logo": "fiberoptik.png" },
+                            { "name": "Google Earth", "logo": "googleearth.png" },
+                            { "name": "Radio Mobile", "logo": "radiomobile.png" }
+                        ]
+                    },
+                    {
+                        "title": "PCB Design & Simulation",
+                        "tools": [
+                            { "name": "Protel", "logo": "protel.png" },
+                            { "name": "AutoCAD", "logo": "autocad.png" },
+                            { "name": "KiCad", "logo": "kicad.png" },
+                            { "name": "EasyEDA", "logo": "easyeda.png" },
+                            { "name": "CST Studio", "logo": "cst.png" }
+                        ]
+                    },
+                    {
+                        "title": "Microcontroller & IoT",
+                        "tools": [
+                            { "name": "Arduino", "logo": "arduino.png" },
+                            { "name": "ESP32", "logo": "esp32.png" },
+                            { "name": "Raspberry Pi", "logo": "raspberry.png" }
+                        ]
+                    },
+                    {
+                        "title": "Hardware & Software Assembly",
+                        "tools": [
+                            { "name": "CPU", "logo": "fa-microchip" },
+                            { "name": "Tools", "logo": "fa-toolbox" },
+                            { "name": "PC", "logo": "fa-desktop" }
+                        ]
+                    },
+                    {
+                        "title": "Digital Signal Processing",
+                        "tools": [
+                            { "name": "MATLAB", "logo": "matlab.png" }
+                        ]
+                    }
                 ]
             },
             "certificates": {
@@ -526,16 +718,29 @@ document.addEventListener("DOMContentLoaded", () => {
         // Render Skills Grid
         const skillsContainer = document.getElementById('skills-container');
         const skillIcons = [
-            "fa-network-wired", "fa-microchip", "fa-satellite-dish", "fa-wave-square",
-            "fa-server", "fa-code", "fa-clock", "fa-cube",
-            "fa-shield-halved", "fa-screwdriver-wrench", "fa-cloud", "fa-diagram-project"
+            "fa-network-wired", "fa-satellite-dish", "fa-server", "fa-map-pin",
+            "fa-shield-halved", "fa-route", "fa-diagram-project", "fa-microchip",
+            "fa-robot", "fa-screwdriver-wrench", "fa-wave-square"
         ];
         if (skillsContainer && data.skills && data.skills.items) {
             skillsContainer.innerHTML = data.skills.items.map((skill, idx) => `
                 <div class="skill-card">
-                    <i class="fas ${skillIcons[idx] || 'fa-code'}"></i>
-                    <h3>${skill.title}</h3>
-                    <p>${skill.description}</p>
+                    <div class="skill-header">
+                        <i class="fas ${skillIcons[idx] || 'fa-code'}"></i>
+                        <h3>${skill.title}</h3>
+                    </div>
+                    <div class="skill-tools">
+                        ${skill.tools.map(tool => `
+                            <div class="tool-badge" ${!tool.name ? 'style="justify-content: center; padding: 10px;"' : ''}>
+                                ${tool.logo ? (
+                                    tool.logo.startsWith('fa-') 
+                                    ? `<i class="fa-solid ${tool.logo}"></i>` 
+                                    : `<img src="${tool.logo}" alt="" class="tool-img" onerror="this.style.display='none'">`
+                                ) : ''}
+                                ${tool.name ? `<span>${tool.name}</span>` : ''}
+                            </div>
+                        `).join('')}
+                    </div>
                 </div>
             `).join('');
         }
