@@ -898,11 +898,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Update Footer
         if (data.footer) {
-            document.getElementById('footer-phone').textContent = data.footer.phone;
-            document.getElementById('footer-email').textContent = data.footer.email;
-            document.getElementById('footer-linkedin').textContent = data.footer.linkedin;
-            document.getElementById('footer-github').textContent = data.footer.github;
-            document.getElementById('footer-copy').innerHTML = data.footer.copyright;
+            const footerCopy = document.getElementById('footer-copy');
+            if (footerCopy) {
+                footerCopy.innerHTML = data.footer.copyright;
+            }
         }
     }
 
