@@ -44,6 +44,36 @@
             <div class="badge"><i class="fas fa-user"></i> <span data-i18n="hero.badge">MY PROFILE</span></div>
             <h1><span class="hero-greeting" data-i18n="hero.title_prefix">Hello everyone! I'm</span><br><span id="hero-name" data-i18n="hero.name">Dimas Surya Saputra</span></h1>
             <p data-i18n="hero.description">Saya lulusan Teknik Komputer & Jaringan, dan saat ini saya sebagai mahasiswa PNJ Teknik Telekomunikasi...</p>
+            
+            <!-- NEW BLOCK: Hero Actions (Buttons) -->
+            <div class="hero-actions">
+            <!-- Ganti atribut href dengan nama file CV Anda (misal: CV_Dimas.pdf) -->
+            <a href="/All Dokumen/Rev2026_Dimas Surya Saputra - CV.pdf" download class="hero-btn btn-primary">
+                <i class="fa-solid fa-download"></i> <span data-i18n="hero.btn_cv">Unduh CV</span>
+            </a>
+            
+            <div class="dropdown-wrapper">
+                <!-- Tambahkan id="contactBtn" -->
+                <button class="hero-btn btn-secondary" id="contactBtn">
+                    <i class="fa-regular fa-comment-dots"></i> <span data-i18n="hero.btn_contact">Hubungi Saya</span> <i class="fa-solid fa-chevron-down" style="font-size: 0.8rem; margin-left: 5px;"></i>
+                </button>
+                <!-- Tambahkan id="contactDropdown" -->
+                <div class="dropdown-content" id="contactDropdown">
+                    <a href="https://wa.me/6285884588821" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-whatsapp" style="color: #25D366;"></i> WhatsApp
+                    </a>
+                    <a href="mailto:dimsursap23@gmail.com">
+                        <img src="/All Dokumen/img/gmail.png" alt="Gmail" class="dropdown-icon"> Gmail
+                    </a>
+                    <!-- Ganti email tujuan Outlook di bawah ini -->
+                    <a href="mailto:dimslur2395@outlook.com">
+                        <img src="/All Dokumen/img/outlook.png" alt="Outlook" class="dropdown-icon"> Outlook
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- End of NEW BLOCK -->
+
             <!-- Terminal Component -->
             <div class="terminal">
                 <div class="terminal-header">
@@ -134,13 +164,31 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer / Contact Section -->
     <footer id="contact">
-        <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
-            <span><i class="fa-solid fa-phone"></i> <span id="footer-phone">085884588821</span></span>
-            <span><i class="fa-solid fa-envelope"></i> <span id="footer-email">dimsursap23@gmail.com</span></span>
-            <span><i class="fa-brands fa-linkedin"></i> <span id="footer-linkedin">Dimas Surya Saputra (linkedin.com/in/dimas-surya-saputra-b4922b285)</span></span>
+        <div class="footer-socials">
+            <!-- Redirect ke WhatsApp (Ikon Hijau) -->
+            <a href="https://wa.me/6285884588821" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="WhatsApp">
+                <i class="fa-brands fa-whatsapp" style="color: #25D366;"></i>
+            </a>
+            
+            <!-- Redirect ke Email (Logo PNG) -->
+            <a href="mailto:dimsursap23@gmail.com" class="social-btn" aria-label="Email">
+                <img src="/All Dokumen/img/gmail.png" alt="Gmail" class="social-icon">
+            </a>
+            
+            <!-- Redirect ke LinkedIn (Logo PNG) -->
+            <a href="https://linkedin.com/in/dimas-surya-saputra-b4922b285" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+                <img src="/All Dokumen/img/linkedin.png" alt="LinkedIn" class="social-icon">
+            </a>
+
+            <!-- Redirect ke GitHub (Ikon Putih) -->
+            <!-- Ganti URL href di bawah ini dengan link profil GitHub Anda -->
+            <a href="https://github.com/dimsur9208" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
+                <i class="fa-brands fa-github" style="color: #ffffff;"></i>
+            </a>
         </div>
+        
         <div>
             <span id="footer-copy">&copy; 2026 Dimas Surya Saputra - Portofolio</span>
         </div>
