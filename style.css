@@ -147,6 +147,131 @@ nav {
     max-width: 550px;
 }
 
+/* --- CUSTOM STYLING FOR HERO BUTTONS & DROPDOWN --- */
+.hero-actions {
+    display: flex;
+    gap: 1.2rem;
+    margin-bottom: 2.5rem; /* Memberikan jarak dengan terminal di bawahnya */
+    align-items: center;
+    flex-wrap: wrap; /* Agar rapi jika dibuka di layar HP */
+}
+
+.hero-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-family: var(--font-code);
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+/* Tombol Primary (Download CV) */
+.btn-primary {
+    background: rgba(255, 50, 50, 0.5); /* Warna merah dengan transparansi 50% */
+    color: #ffffff; /* Teks warna putih agar jelas terbaca */
+    border: 1px solid rgba(255, 50, 50, 0.8); /* Garis tepi merah */
+    box-shadow: 0 0 10px rgba(255, 50, 50, 0.3);
+}
+
+.btn-primary:hover {
+    background: rgba(255, 50, 50, 1); /* Warna merah solid (tidak transparan) saat di-hover */
+    color: #ffffff;
+    border-color: rgba(255, 50, 50, 1);
+    box-shadow: 0 0 20px rgba(255, 50, 50, 0.6); /* Efek bercahaya lebih terang */
+    transform: translateY(-2px);
+}
+
+/* Tombol Secondary (Contact Me) */
+.btn-secondary {
+    background: rgba(0, 240, 255, 0.5); /* Warna biru neon dengan transparansi 50% */
+    color: #ffffff; /* Teks warna putih */
+    border: 1px solid var(--accent-blue);
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.3);
+}
+
+.btn-secondary:hover {
+    background: rgba(0, 240, 255, 1); /* Warna biru solid (tidak transparan) saat di-hover */
+    color: var(--bg-color); /* Teks berubah menjadi gelap agar kontras dengan biru menyala */
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.6);
+    transform: translateY(-2px);
+}
+
+/* Wrapper Dropdown (Membungkus Tombol Contact & Menunya) */
+.dropdown-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+/* Kotak Isi Dropdown */
+.dropdown-content {
+    position: absolute;
+    top: 100%; /* Muncul tepat di bawah tombol */
+    left: 0;
+    margin-top: 10px;
+    background: var(--card-bg);
+    min-width: 180px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Efek Memunculkan Dropdown saat di klik */
+.dropdown-content.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Styling Khusus untuk Logo PNG di Dropdown Contact */
+.dropdown-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    border-radius: 2px;
+}
+
+/* Item Menu WhatsApp dan Gmail */
+.dropdown-content a {
+    color: var(--text-primary);
+    padding: 14px 18px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.95rem;
+    font-family: var(--font-main);
+    transition: 0.2s;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.dropdown-content a:last-child {
+    border-bottom: none;
+}
+
+.dropdown-content a:hover {
+    background: rgba(0, 240, 255, 0.1);
+    color: var(--accent-blue);
+    padding-left: 22px; /* Efek animasi teks sedikit bergeser ke kanan */
+}
+
+.dropdown-content a i {
+    font-size: 1.3rem;
+}
+
 /* --- LAPTOP FRAME CSS (FULL FIT SCREEN) --- */
 .profile-container {
     position: relative;
@@ -322,6 +447,9 @@ nav {
     padding: 1.8rem;
     border-radius: 12px;
     transition: 0.3s;
+    display: flex;          /* Membuat layout menjadi menyamping */
+    gap: 1.5rem;            /* Jarak antara logo dan teks */
+    align-items: flex-start; /* Memastikan logo dan teks rata atas */
 }
 
 .edu-item:hover {
@@ -330,6 +458,7 @@ nav {
 }
 
 .edu-item::before {
+    /* (Bagian ini biarkan sama seperti aslinya) */
     content: "";
     position: absolute;
     left: -2.65rem;
@@ -340,6 +469,23 @@ nav {
     border: 3px solid var(--accent-blue);
     border-radius: 50%;
     box-shadow: 0 0 10px var(--accent-blue);
+}
+
+/* Styling Khusus Logo Pendidikan */
+.edu-logo {
+    width: 80px;            /* Ukuran logo (bisa disesuaikan) */
+    height: 80px;
+    object-fit: contain;
+    background-color: transparent;
+    border-radius: 8px;
+    flex-shrink: 0;         /* Mencegah logo mengecil jika teks terlalu panjang */
+    
+    /* Jika logo bawaan ber-background putih tebal dan mengganggu, aktifkan baris di bawah ini dengan menghapus tanda komentar */
+    /* mix-blend-mode: multiply; filter: brightness(1.2); */
+}
+
+.edu-content {
+    flex: 1; /* Teks akan mengisi sisa ruang yang ada di sebelah kanan logo */
 }
 
 .edu-duration {
@@ -500,6 +646,9 @@ nav {
     padding: 1.8rem;
     border-radius: 12px;
     transition: 0.3s;
+    display: flex;          /* Membuat layout menjadi menyamping */
+    gap: 1.5rem;            /* Jarak antara logo dan teks */
+    align-items: flex-start; /* Memastikan logo dan teks rata atas */
 }
 
 .experience-item:hover {
@@ -518,6 +667,20 @@ nav {
     border: 3px solid var(--accent-blue);
     border-radius: 50%;
     box-shadow: 0 0 10px var(--accent-blue);
+}
+
+/* Styling Khusus Logo Pengalaman */
+.experience-logo {
+    width: 80px; /* Ukuran logo */
+    height: 80px;
+    object-fit: contain;
+    background-color: transparent;
+    border-radius: 8px;
+    flex-shrink: 0; /* Mencegah logo mengecil/gepeng jika teks disebelahnya panjang */
+}
+
+.experience-content {
+    flex: 1; /* Teks akan otomatis memenuhi sisa ruang di kanan logo */
 }
 
 .role-subtitle {
@@ -596,6 +759,41 @@ nav {
     transition: 0.2s;
 }
 
+/* --- CUSTOM STYLING FOR CERTIFICATE BUTTONS --- */
+.cert-actions {
+    display: flex;
+    justify-content: center; /* Membuat kedua tombol berada persis di tengah */
+    gap: 15px;               /* Jarak antara tombol Preview dan Download */
+    margin-top: 1.8rem;
+}
+
+.cert-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 18px;
+    background: rgba(0, 240, 255, 0.05);
+    color: var(--accent-blue);
+    border: 1px solid var(--accent-blue);
+    border-radius: 6px;
+    text-decoration: none;
+    font-family: var(--font-code);
+    font-size: 0.85rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.cert-btn i {
+    font-size: 1rem;
+}
+
+.cert-btn:hover {
+    background: var(--accent-blue);
+    color: var(--bg-color);
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.4);
+    transform: translateY(-2px);
+}
+
 .tag:hover {
     background: rgba(255, 255, 255, 0.08);
     color: var(--text-primary);
@@ -612,25 +810,70 @@ nav {
 /* Footer */
 footer {
     text-align: center;
-    padding: 3rem 8%;
+    padding: 4rem 8% 3rem 8%;
     border-top: 1px solid var(--border-color);
     color: var(--text-secondary);
-    font-size: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 25px;
 }
 
-footer span {
+.footer-socials {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Styling Khusus untuk Logo PNG di Footer/Tombol Bulat */
+.social-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    border-radius: 4px; /* Opsional, membuat sedikit lengkungan di ujung gambar */
+    transition: 0.3s;
+}
+
+/* Desain Tombol Kapsul */
+.social-btn {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
+    background: rgba(0, 240, 255, 0.05);
+    border: 1px solid var(--border-color);
+    padding: 12px 24px;
+    border-radius: 50px; 
+    color: var(--text-primary);
+    text-decoration: none;
+    font-family: var(--font-code);
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
 }
 
-footer i {
+.social-btn i {
+    font-size: 1.2rem;
     color: var(--accent-blue);
+    transition: 0.3s;
+}
+
+/* Membuat logo PNG di footer tetap proporsional saat tombol disentuh/hover */
+.social-btn:hover .social-icon {
+    transform: scale(1.1); /* Gambar sedikit membesar saat tombol disentuh */
+}
+
+/* Efek saat tombol disentuh (Hover) */
+.social-btn:hover {
+    background: var(--accent-blue);
+    border-color: var(--accent-blue);
+    color: var(--bg-color);
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.5);
+    transform: translateY(-3px);
+}
+
+.social-btn:hover i {
+    color: var(--bg-color);
 }
 
 /* Responsive Design */
@@ -660,6 +903,18 @@ footer i {
         transform-origin: center;
     }
 }
+
+@media (max-width: 600px) {
+    .edu-item, .experience-item {
+        flex-direction: column; /* Mengubah logo berada di atas teks pada layar HP */
+        gap: 1rem;
+    }
+    .edu-logo, .experience-logo {
+        width: 65px;
+        height: 65px;
+    }
+}
+
 /* Language Switcher Styling */
 .language-switcher select {
     background-color: var(--card-bg);
