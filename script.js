@@ -81,12 +81,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 "badge": "PROFIL SAYA",
                 "title_prefix": "Halo semua! Saya",
                 "name": "Dimas Surya Saputra",
-                "description": "Saya lulusan Teknik Komputer & Jaringan, dan saat ini saya sebagai mahasiswa PNJ Teknik Telekomunikasi yang gemar mempelajari hal-hal yang baru dan mengeksplorasi teknologi, khususnya di bidang telekomunikasi. Saya memiliki pengalaman menggunakan aplikasi software Cisco Packet Tracer, Winbox, PuTTY, Wireshark, Virtual Studio Code, Arduino IDE, Virtualbox, Multisim, EasyEDA, KiCad, Protel, AutoCAD, SketchUp, Axence NetTools, CST Studio Suite, MATLAB, dan Radio Mobile, baik dalam tugas proyek akademik maupun kegiatan organisasi. Saya mampu bekerja sama dalam tim dengan baik, mengelola waktu secara efektif, dan berpikir secara logis dalam menyelesaikan suatu masalah.",
+                "description": "Saya lulusan Teknik Komputer & Jaringan, dan saat ini saya sebagai mahasiswa PNJ Teknik Telekomunikasi yang gemar mempelajari hal-hal yang baru dan mengeksplorasi teknologi, khususnya di bidang telekomunikasi. Saya memiliki pengalaman menggunakan aplikasi perangkat lunak Cisco Packet Tracer, Winbox, PuTTY, Wireshark, Virtual Studio Code, Arduino IDE, Virtualbox, Multisim, EasyEDA, KiCad, Protel, AutoCAD, SketchUp, Axence NetTools, CST Studio Suite, MATLAB, dan Radio Mobile, baik dalam tugas proyek akademik maupun kegiatan organisasi. Saya mampu bekerja sama dalam tim dengan baik, mengelola waktu secara efektif, dan berpikir secara logis dalam menyelesaikan suatu masalah.",
                 "btn_cv": "Unduh CV Saya",
                 "btn_contact": "Hubungi Saya",
                 "terminal_title": "Saya memiliki minat di bidang :",
                 "terminal_content": [
-                    "IT Support, Teknik Komputer & Jaringan, Teknisi, Perakitan Perangkat Keras Komputer, Mikrotik, IoT (Arduino/ESP32), Teknik Telekomunikasi, dan Keamanan Siber."
+                    "<i>IT Support</i>, Teknik Komputer & Jaringan, Teknisi, Perakitan Perangkat Keras Komputer, <i>Mikrotik</i>, <i>IoT (Arduino/ESP32)</i>, Teknik Telekomunikasi, dan Keamanan Siber."
                 ]
             },
             "education": {
@@ -100,8 +100,8 @@ document.addEventListener("DOMContentLoaded", () => {
                         "institution": "Politeknik Negeri Jakarta (PNJ) - Depok",
                         "detail_title": "D3 - Telekomunikasi | IPK Sementara : 3.50 / 4.00",
                         "points": [
-                            "Aktif mempelajari perancangan jaringan FTTx, perancangan jaringan lokal maupun seluler, sistem telekomunikasi wired dan wireless, pemrosesan sinyal analog dan digital, serta pengembangan perangkat IoT berbasis mikrokontroler, baik Arduino, ESP, maupun Raspberry Pi.",
-                            "Simulasi & fabrikasi antena kawat/alumunium (Horn) dan mikrostrip.",
+                            "Aktif mempelajari perancangan jaringan <i>FTTx</i>, perancangan jaringan lokal maupun seluler, sistem telekomunikasi <i>wired</i> dan <i>wireless</i>, pemrosesan sinyal analog dan digital, serta pengembangan perangkat <i>IoT</i> berbasis mikrokontroler, baik <i>Arduino, ESP,</i> maupun <i>Raspberry Pi</i>.",
+                            "Simulasi & fabrikasi antena kawat/alumunium <i>(Horn)</i> dan mikrostrip.",
                             "Aktif mengikuti organisasi Kelompok Studi Mahasiswa (KSM Psychorobotic), baik anggota maupun pengurus."
                         ]
                     },
@@ -111,11 +111,11 @@ document.addEventListener("DOMContentLoaded", () => {
                         "institution": "SMK Negeri 7 Jakarta - Jakarta Timur",
                         "detail_title": "Nilai Rata-Rata Raport : 85.11",
                         "points": [
-                            "Menyelesaikan berbagai modul praktikum dan simulasi jaringan (LAN, MAN, WAN, VLAN, PBX, Mikrotik).",
-                            "Menyelesaikan modul instalasi di OS Debian (Web Server, Web Hosting, Ansible, dll).",
-                            "Mempelajari dan menyelesaikan modul pemrograman web HTML, CSS, dan JavaScript.",
-                            "Meraih Juara Harapan II lomba Cyber Security (Bersama/Tim) tingkat Jakarta Timur 1.",
-                            "Mengikuti Sertifikasi Ready4Sec yang diselenggarakan oleh InfraDigital Foundation (IDF) x Microsoft.",
+                            "Menyelesaikan berbagai modul praktikum dan simulasi jaringan (<i>LAN, MAN, WAN, VLAN, PBX, Mikrotik</i>).",
+                            "Menyelesaikan modul instalasi di <i>OS Debian</i> (<i>Web Server, Web Hosting, Ansible,</i> dll).",
+                            "Mempelajari dan menyelesaikan modul pemrograman web <i>HTML, CSS,</i> dan <i>JavaScript</i>.",
+                            "Meraih Juara Harapan II lomba <i>Cyber Security</i> (Bersama/Tim) tingkat Jakarta Timur 1.",
+                            "Mengikuti Sertifikasi <i>Ready4Security</i> yang diselenggarakan oleh <i>InfraDigital Foundation (IDF) x Microsoft</i>.",
                             "Membuat perancangan dan implementasi jaringan komputer."
                         ]
                     },
@@ -146,29 +146,29 @@ document.addEventListener("DOMContentLoaded", () => {
                     {
                         "logo": "All Dokumen/img/apindo2.png",
                         "company": "PT. Angkasa Pura Indonesia (Halim PK)",
-                        "role": "MAGANG (PKL) | IT Facility Maintenance",
+                        "role": "MAGANG (PKL) | <i>IT Facility Maintenance</i>",
                         "duration": "3 Agustus 2026 - Sekarang",
                         "jobdesk_title": "Deskripsi Pekerjaan :",
                         "points": [
-                            "Melakukan pengcekan & pemeliharaan harian fasilitas elektronika, IT dan perangkat penunjang operasional bandara Halim PK.",
-                            "Mendukung pengecekan jaringan dan troubleshooting infrastruktur IT harian.",
-                            "Melakukan pengecekan & konfigurasi resolusi kamera CCTV.",
-                            "Melakukan pengecekan & memperbaiki X-Ray, WTMD, HHMD, FIDS, PABX, dan CCTV di area bandara Halim PK.",
+                            "Melakukan pengcekan & pemeliharaan harian fasilitas elektronika, <i>IT</i> dan perangkat penunjang operasional bandara Halim PK.",
+                            "Mendukung pengecekan jaringan dan <i>troubleshooting</i> infrastruktur IT harian.",
+                            "Melakukan pengecekan & konfigurasi resolusi kamera <i>CCTV</i>.",
+                            "Melakukan pengecekan & memperbaiki <i>X-Ray, WTMD, HHMD, FIDS, PABX,</i> dan <i>CCTV</i> di area bandara Halim PK.",
                             "Menyiapkan peralatan audio (sistem suara) untuk kegiatan di area bandara Halim PK.",
-                            "Mengerjakan projek sistem Flightradar24 Feeder berbasis Raspberry Pi untuk mengimpelementasi radar pesawat di bandara.",
+                            "Mengerjakan projek sistem <i>Flightradar24 Feeder</i> berbasis <i>Raspberry Pi</i> untuk mengimpelementasi radar pesawat di bandara.",
                             "Membongkar pasang komputer karyawan di Gedung Teknik.",
-                            "Melakukan pendataan nomor serial (S/N) peralatan elektronika & IT di bandara dengan Spreadsheet (Excel)."
+                            "Melakukan pendataan nomor serial (S/N) peralatan elektronika & <i>IT</i> di bandara dengan <i>Spreadsheet (Excel)</i>."
                         ]
                     },
                     {
                         "logo": "All Dokumen/img/zyrex.png",
                         "company": "PT. Zyrexindo Mandiri Buana Tbk.",
-                        "role": "FREELANCE / KERJA HARIAN | Teknik Perakitan",
+                        "role": "<i>FREELANCE</i> / KERJA HARIAN | Teknik Perakitan",
                         "duration": "28 - 31 Desember 2025",
                         "jobdesk_title": "Deskripsi Pekerjaan :",
                         "points": [
-                            "Merakit hardware dan memproduksi pada perangkat laptop sesuai dengan prosedur/SOP serta pengecekan QC (Quality Control) yang sangat ketat.",
-                            "Mampu mengerjakan tugas/task yang bersifat repetitif, termasuk pemasangan komponen, penyambungan kabel, serta teknik packaging agar tetap memenuhi target produksi harian.",
+                            "Merakit hardware dan memproduksi pada perangkat laptop sesuai dengan prosedur/SOP serta pengecekan <i>QC (Quality Control)</i> yang sangat ketat.",
+                            "Mampu mengerjakan tugas/<i>task</i> yang bersifat repetitif, termasuk pemasangan komponen, penyambungan kabel, serta teknik <i>packaging</i> agar tetap memenuhi target produksi harian.",
                             "Mampu mengoperasikan peralatan khusus dan obeng elektrik dengan benar dan hati-hati guna mencegah kerusakan pada komponen elektronik yang sensitif.",
                             "Mampu melakukan pemeriksaan pada unit yang dirakit sesuai dengan prosedur dengan tingkat ketelitian yang tinggi guna untuk mengidentifikasi kecacatan/ketidaksesuaian sebelum masuk ke tahap produksi selanjutnya.",
                             "Mampu bekerja secara disiplin, fokus, tingkat presisi yang tinggi, dan cepat, serta memastikan terciptanya ruang kerja yang aman dan rapi."
@@ -177,17 +177,17 @@ document.addEventListener("DOMContentLoaded", () => {
                     {
                         "logo": "All Dokumen/img/kemendikbud.png",
                         "company": "Kemendikbudristek (Kementerian Pendidikan, Budaya, Riset, dan Teknologi)",
-                        "role": "PKL | IT Support",
+                        "role": "PKL | <i>IT Support</i>",
                         "duration": "3 Oktober 2022 - 31 Maret 2023",
                         "jobdesk_title": "Deskripsi Pekerjaan :",
                         "points": [
                             "Memperbaiki laptop dan PC karyawan.",
-                            "Menginstalasi OS Windows di laptop dan PC karyawan.",
+                            "Menginstalasi <i>OS Windows</i> di laptop dan PC karyawan.",
                             "Menginstalasi OS di Server.",
-                            "Mengkonfigurasi laptop atau PC ke printer karyawan dan staff.",
-                            "Mengkonfigurasi jaringan server dan CCTV.",
-                            "Mengkonfigurasi setup monitor di Ruang Sidang.",
-                            "Menginstalasi tools seperti Microsoft Office, Nitro (PDF Reader), dan driver perangkat (driver untuk printer, atau perangkat lainnya pada laptop dan PC)."
+                            "Mengkonfigurasi laptop atau PC ke <i>printer</i> karyawan dan staff.",
+                            "Mengkonfigurasi jaringan server dan <i>CCTV</i>.",
+                            "Mengkonfigurasi <i>setup</i> monitor di Ruang Sidang.",
+                            "Menginstalasi <i>tools</i> seperti <i>Microsoft Office, Nitro (PDF Reader),</i> dan <i>driver</i> perangkat (<i>driver<i> untuk <i>printer</i>, atau perangkat lainnya pada laptop dan PC)."
                         ]
                     }
                 ]
@@ -221,7 +221,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         ]
                     },
                     {
-                        "title": "Web Server & Pemrograman",
+                        "title": "<i>Web Server</i> & Pemrograman",
                         "tools": [
                             { "name": "Debian", "logo": "/All Dokumen/img/debian.png" },
                             { "name": "Ubuntu", "logo": "/All Dokumen/img/ubuntu.png" },
@@ -252,7 +252,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         ]
                     },
                     {
-                        "title": "Routing & Switching",
+                        "title": "<i>Routing & Switching</i>",
                         "tools": [
                             { "name": "Cisco Packet Tracer", "logo": "/All Dokumen/img/cisco.png" },
                             { "name": "Cisco", "logo": "/All Dokumen/img/cisco2.png" },
@@ -276,7 +276,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         ]
                     },
                     {
-                        "title": "Desain Elektronika, Desain PCB & Simulasi",
+                        "title": "Desain Elektronika, Desain <i>PCB</i> & Simulasi",
                         "tools": [
                             { "name": "Protel", "logo": "/All Dokumen/img/protel.png" },
                             { "name": "AutoCAD", "logo": "/All Dokumen/img/autocad.png" },
@@ -287,7 +287,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         ]
                     },
                     {
-                        "title": "Mikrokontroler & IoT",
+                        "title": "Mikrokontroler & <i>IoT</i>",
                         "tools": [
                             { "name": "Arduino", "logo": "/All Dokumen/img/arduino.png" },
                             { "name": "C++ (Arduino IDE)", "logo": "/All Dokumen/img/c++.png" },
@@ -321,20 +321,20 @@ document.addEventListener("DOMContentLoaded", () => {
                 "btn_less": "Sembunyikan <i class='fa-solid fa-chevron-up'></i>",
                 "achievements": [
                     {
-                        "title": "Juara Harapan 2 - Lomba Cyber Security (Tingkat Jakarta Timur 1)",
+                        "title": "Juara Harapan 2 - Lomba <i>Cyber Security</i> (Tingkat Jakarta Timur 1)",
                         "author": "oleh LKS SMK",
                         "duration": "Agustus 2023 | TERSERTIFIKASI",
-                        "description": "Berhasil menyelesaikan modul LKS SMK instalasi dan konfigurasi web server sebagai pelindung dari serangan siber berbasis CentOS dan Kali Linux sebagai penyerang web server.",
+                        "description": "Berhasil menyelesaikan modul LKS SMK instalasi dan konfigurasi <i>web server</i> sebagai pelindung dari serangan siber berbasis <i>CentOS</i> dan <i>Kali Linux</i> sebagai penyerang <i>web server</i>.",
                         "tags": ["Keamanan Siber", "Jaringan", "Instalasi & Konfigurasi"],
                         "file": "/All Dokumen/Sertifikat/Prestasi (Umum)/Dimas S - Sertifikat Juara Harapan II lomba CyberSec Jaktim 1.pdf",
                         "preview_link": "https://drive.google.com/file/d/1bsrUIav7aSGW0yQ_vrhnPiw7iSdNJi8i/view?usp=drive_link"
                     },
                     {
-                        "title": "Sertifikat Magang/PKL Kemendikbudristek - IT Support",
+                        "title": "Sertifikat Magang/PKL Kemendikbudristek - <i>IT Support</i>",
                         "author": "oleh Kemendikbudristek",
                         "duration": "April 2023 | TERSERTIFIKASI",
-                        "description": "Telah menyelesaikan program PKL di Inspektorat Jenderal (Itjen) Kemendikbudristek sebagai IT Support dengan predikat A",
-                        "tags": ["IT Support", "Perangkat Keras & Lunak", "Instalasi & Konfigurasi"],
+                        "description": "Telah menyelesaikan program PKL di Inspektorat Jenderal (Itjen) Kemendikbudristek sebagai <i>IT Support</i> dengan predikat A",
+                        "tags": ["<i>IT Support</i>", "Perangkat Keras & Lunak", "Instalasi & Konfigurasi"],
                         "file": "/All Dokumen/Sertifikat/Prestasi (Umum)/Dimas S - Sertifikat Piagam PKL Kmdikbud.pdf",
                         "preview_link": "https://drive.google.com/file/d/1MPIE2ikgIMMeC01GFFI6GJuvlL7-oOH5/view?usp=drive_link"
                     },
@@ -342,8 +342,8 @@ document.addEventListener("DOMContentLoaded", () => {
                         "title": "Sertifikat Kopetensi BNSP Teknik Komputer Jaringan",
                         "author": "oleh LSP SMK Negeri 7 Jakarta",
                         "duration": "Mei 2024 (berlaku 3 Tahun) | TERSERTIFIKASI",
-                        "description": "Berhasil menyelesaikan modul BNSP tentang perencanaan dan membangun jaringan menggunakan Cisco Packet Tracer sebagai Denah dan Mikrotik sebagai bahan praktek uji. Sertifikat ini berstatus KOMPETEN.",
-                        "tags": ["Jaringan", "Perencanaan Jaringan", "Mikrotik", "Cisco Packet Tracer", "Konfigurasi", "Jaringan Lokal Area", "Virtual Jaringan Lokal Area"],
+                        "description": "Berhasil menyelesaikan modul BNSP tentang perencanaan dan membangun jaringan menggunakan <i>Cisco Packet Tracer</i> sebagai Denah dan <i>Mikrotik</i> sebagai bahan praktek uji. Sertifikat ini berstatus <i>KOMPETEN</i>.",
+                        "tags": ["Jaringan", "Perencanaan Jaringan", "<i>Mikrotik</i>", "<i>Cisco Packet Tracer</i>", "Konfigurasi", "Jaringan Lokal Area", "<i>Virtual</i> Jaringan Lokal Area"],
                         "file": "/All Dokumen/Sertifikat/Prestasi (Umum)/Dimas S - Sertifikat BNSP.pdf",
                         "preview_link": "https://drive.google.com/file/d/1NlHu0E7Xv2R3w8bN5xMRUCZ6atmmWWlS/view?usp=drive_link"
                     },
@@ -359,20 +359,20 @@ document.addEventListener("DOMContentLoaded", () => {
                 ],
                 "trainings": [
                     {
-                        "title": "Sertifikat Ready4Security Indonesia Training (Periode Agustus - September 2023)",
+                        "title": "Sertifikat <i>Ready4Security Indonesia Training</i> (Periode Agustus - September 2023)",
                         "author": "oleh InfraDigital Foundation (IDF) x Microsoft",
                         "duration": "September 2023 | TERSERTIFIKASI",
-                        "description": "Telah mengikuti kegiatan seminar pelatihan program Ready4Security untuk persiapan mengikuti ujian Microsoft SC-200 yang diselenggarakan oleh IDF x Microsoft.",
+                        "description": "Telah mengikuti kegiatan seminar pelatihan program <i>Ready4Security</i> untuk persiapan mengikuti ujian <i>Microsoft SC-200</i> yang diselenggarakan oleh IDF x Microsoft.",
                         "tags": ["Keamanan Siber", "Pelatihan", "IDF x Microsoft"],
                         "file": "/All Dokumen/Sertifikat/Pelatihan & Organisasi/Dimas S - Sertifikat IDF Training.pdf",
                         "preview_link": "https://drive.google.com/file/d/1-cDzat6mX0yurMI4UXWtgNhWHx_ipHPt/view?usp=drive_link"
                     },
                     {
-                        "title": "Sertifikat MATLAB Onramp Training",
+                        "title": "Sertifikat <i>MATLAB Onramp Training</i>",
                         "author": "oleh MATLAB",
                         "duration": "April 2026 | TERSERTIFIKASI",
-                        "description": "Mengikuti dan menyelesaikan modul sertifikasi pelatihan MATLAB Onramp untuk simulasi pemrosesan sinyal digital berbasis MATLAB.",
-                        "tags": ["Pemrosesan Sinyal Digital", "Pelatihan", "MATLAB"],
+                        "description": "Mengikuti dan menyelesaikan modul sertifikasi pelatihan <i>MATLAB Onramp</i> untuk simulasi pemrosesan sinyal digital berbasis <i>MATLAB</i>.",
+                        "tags": ["Pemrosesan Sinyal Digital", "Pelatihan", "<i>MATLAB</i>"],
                         "file": "/All Dokumen/Sertifikat/Pelatihan & Organisasi/Dimas S - Sertifikat MATLAB Training Onramp.pdf",
                         "preview_link": "https://drive.google.com/file/d/1zApQI3ikuzj5GtPjkgE5y7mtwSUVkxP_/view?usp=drive_link"
                     },
@@ -381,7 +381,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         "author": "oleh KSM Psychorobotic",
                         "duration": "Juni 2026 | TERSERTIFIKASI",
                         "description": "Terlibat aktif dalam kegiatan keanggotaan dan kepengurusan di divisi Perlengkapan/Logistik di KSM Psychorobotic.",
-                        "tags": ["KSM Psychorobotic", "Mikrokontroler", "ESP32", "Organisasi", "PNJ"],
+                        "tags": ["KSM Psychorobotic", "Mikrokontroler", "<i>ESP32</i>", "Organisasi", "PNJ"],
                         "file": "/All Dokumen/Sertifikat/Pelatihan & Organisasi/Dimas S - Sertifikat Anggota Psycho.pdf",
                         "preview_link": "https://drive.google.com/file/d/1J1VhZTEkGHk9i_TjEK7s6mdXcfq3t188/view?usp=drive_link"
                     }
@@ -415,11 +415,11 @@ document.addEventListener("DOMContentLoaded", () => {
         "en": {
             "nav": {
                 "about": "My Profile",
-                "education": "Education",
-                "experience": "Experience",
+                "education": "Educations",
+                "experience": "Experiences",
                 "skills": "Skills",
-                "certificates": "Certificate",
-                "projects": "Project",
+                "certificates": "Certificates",
+                "projects": "Projects",
                 "contact": "Contact"
             },
             "hero": {
@@ -447,7 +447,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         "points": [
                             "Actively studying FTTx network design, local and cellular network design, wired and wireless telecommunication systems, analog and digital signal processing, and microcontroller-based IoT device development using Arduino, ESP, and Raspberry Pi.",
                             "Simulation & fabricating of wire/aluminum (Horn) and microstrip antennas.",
-                            "Active member and administrator in the Student Study Group (KSM) of Psychorobotic (KSM Psychorobotic) organization."
+                            "Active member and administrator in the Student Study Group (<i>KSM</i>) of Psychorobotic organization."
                         ]
                     },
                     {
@@ -460,7 +460,7 @@ document.addEventListener("DOMContentLoaded", () => {
                             "Completed installation modules in Debian OS (Web Server, Web Hosting, Ansible, etc.).",
                             "Learned and completed HTML, CSS, and JavaScript web programming modules.",
                             "Achieved 2nd Runner-Up in the Cyber Security Competition (Team category) at East Jakarta 1 level.",
-                            "Participated in the Ready4Sec Certification organized by InfraDigital Foundation (IDF) x Microsoft.",
+                            "Participated in the Ready4Security Certification organized by InfraDigital Foundation (IDF) x Microsoft.",
                             "Designed and implemented computer networks."
                         ]
                     },
@@ -669,16 +669,16 @@ document.addEventListener("DOMContentLoaded", () => {
                         "title": "2nd Runner-Up - Cyber Security Competition (East Jakarta 1 Level)",
                         "author": "by LKS SMK",
                         "duration": "August 2023 | CERTIFIED",
-                        "description": "Successfully completed the LKS SMK module on web server installation and configuration of a web server as protection against cyberattacks by CentOS based and Kali Linux OS as web server attacker.",
+                        "description": "Successfully completed the <i>LKS SMK</i> module on web server installation and configuration of a web server as protection against cyberattacks by CentOS based and Kali Linux OS as web server attacker.",
                         "tags": ["Cyber Security", "Networking", "Installation & Configuration"],
                         "file": "/All Dokumen/Sertifikat/Prestasi (Umum)/Dimas S - Sertifikat Juara Harapan II lomba CyberSec Jaktim 1.pdf",
                         "preview_link": "https://drive.google.com/file/d/1bsrUIav7aSGW0yQ_vrhnPiw7iSdNJi8i/view?usp=drive_link"
                     },
                     {
-                        "title": "Ministry Internship Certificate - IT Support",
+                        "title": "<i>Kemendikbudristek</i> Internship Certificate - IT Support",
                         "author": "by Kemendikbudristek",
                         "duration": "April 2023 | CERTIFIED",
-                        "description": "Has completed the PKL program at the Inspectorate General (Itjen) of the Kemendikbudristek as IT Support with an A grade",
+                        "description": "Has completed the internship program at the Inspectorate General (<i>Itjen</i>) of the <i>Kemendikbudristek</i> as IT Support with an A grade",
                         "tags": ["IT Support", "Hardware & Software", "Installation & Configuration"],
                         "file": "/All Dokumen/Sertifikat/Prestasi (Umum)/Dimas S - Sertifikat Piagam PKL Kmdikbud.pdf",
                         "preview_link": "https://drive.google.com/file/d/1MPIE2ikgIMMeC01GFFI6GJuvlL7-oOH5/view?usp=drive_link"
@@ -693,11 +693,11 @@ document.addEventListener("DOMContentLoaded", () => {
                         "preview_link": "https://drive.google.com/file/d/1NlHu0E7Xv2R3w8bN5xMRUCZ6atmmWWlS/view?usp=drive_link"
                     },
                     {
-                        "title": "1st Place Highest National Exam Score across SDN Pondok Bambu 04",
-                        "author": "by SDN Pondok Bambu 04",
+                        "title": "1st Place Highest National Exam Score across Elementary School of <i>Pondok Bambu 04</i>",
+                        "author": "by Elementary School of <i>Pondok Bambu 04</i>",
                         "duration": "June 2018 | CERTIFIED",
-                        "description": "Achieved 1st place for the highest National Exam (UN/USBN) score at SDN Pondok Bambu 04, with a total score (NEM) of 25.64.",
-                        "tags": ["UN", "USBN"],
+                        "description": "Achieved 1st place for the highest National Exam (UN/USBN) score at Elementary School of <i>Pondok Bambu 04</i>, with a total score (NEM) of 25.64.",
+                        "tags": ["National Exam", "School National-Based Exam"],
                         "file": "/All Dokumen/Sertifikat/Prestasi (Umum)/Dimas S - Sertifikat USBN Juara 1.pdf",
                         "preview_link": "https://drive.google.com/file/d/1sv7BViMg_AfkRFsgeY5neBikXwNcNjwv/view?usp=drive_link"
                     }
@@ -723,10 +723,10 @@ document.addEventListener("DOMContentLoaded", () => {
                     },
                     {
                         "title": "Active Membership Certificate in Student Study Group (KSM) of Psychorobotic(2025 Period)",
-                        "author": "by Student Study Group (KSM) of Psychorobotic",
+                        "author": "by Student Study Group (<i>KSM</i>) of Psychorobotic",
                         "duration": "June 2026 | CERTIFIED",
-                        "description": "Actively involved in membership and organizational activities within the Equipment/Logistics division in Student Study Group (KSM) of Psychorobotic.",
-                        "tags": ["Student Study Group (KSM) of Psychorobotic", "Microcontroller", "ESP32", "Organization", "Jakarta State Polytechnic (PNJ)"],
+                        "description": "Actively involved in membership and organizational activities within the Equipment/Logistics division in Student Study Group (<i>KSM</i>) of Psychorobotic.",
+                        "tags": ["Student Study Group (<i>KSM</i>) of Psychorobotic", "Microcontroller", "ESP32", "Organization", "Jakarta State Polytechnic (PNJ)"],
                         "file": "/All Dokumen/Sertifikat/Pelatihan & Organisasi/Dimas S - Sertifikat Anggota Psycho.pdf",
                         "preview_link": "https://drive.google.com/file/d/1J1VhZTEkGHk9i_TjEK7s6mdXcfq3t188/view?usp=drive_link"
                     }
@@ -738,7 +738,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     { 
                         "title": "ESP32-Based Smart Doorlock System (Prototype)", 
                         "description": "Successfully developed an ESP32-based Smart Doorlock System using RFID and Keypad systems. This project is currently a prototype. This system can open access using an RFID card or PIN on the Keypad.", 
-                        "tags": ["Doorlock", "RFID", "Keypad", "IoT", "ESP32", "Student Study Group (KSM) of Psychorobotic"],
+                        "tags": ["Doorlock", "RFID", "Keypad", "IoT", "ESP32", "Student Study Group (<i>KSM</i>) of Psychorobotic"],
                         "images": ["/All Dokumen/Project/doorlock1.png", "/All Dokumen/Project/doorlock2.png", "/All Dokumen/Project/doorlock3.png"]
                     },
                     { 
