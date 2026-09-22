@@ -18,16 +18,8 @@
             <span class="status-dot"></span>
             DIMAS SURYA SAPUTRA - My Portofolio
         </div>
-        <div style="display: flex; align-items: center; gap: 2rem;">
-            <ul class="nav-links">
-                <li><a href="#about" data-i18n="nav.about">My Profile</a></li>
-                <li><a href="#education" data-i18n="nav.education">Education</a></li>
-                <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
-                <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
-                <li><a href="#certificates" data-i18n="nav.certificates">Certificate</a></li>
-                <li><a href="#projects" data-i18n="nav.projects">Project</a></li>
-                <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
-            </ul>
+        
+        <div class="nav-controls">
             <!-- Language Switcher -->
             <div class="language-switcher">
                 <select id="langSwitch" aria-label="Pilih Bahasa">
@@ -35,7 +27,23 @@
                     <option value="en">EN</option>
                 </select>
             </div>
+            
+            <!-- Tombol Hamburger Menu -->
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </div>
+
+        <!-- Daftar Menu (Disembunyikan secara default) -->
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#about" data-i18n="nav.about">My Profile</a></li>
+            <li><a href="#education" data-i18n="nav.education">Education</a></li>
+            <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+            <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+            <li><a href="#certificates" data-i18n="nav.certificates">Certificate</a></li>
+            <li><a href="#projects" data-i18n="nav.projects">Project</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+        </ul>
     </nav>
 
     <!-- Hero Section -->
