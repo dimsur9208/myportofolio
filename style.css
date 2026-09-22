@@ -42,13 +42,13 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 8%;
-    background: rgba(10, 14, 23, 0.85);
+    background: rgba(10, 14, 23, 0.95); /* Sedikit digelapkan agar menu terlihat jelas */
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border-color);
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 100;
+    z-index: 1000;
 }
 
 .logo {
@@ -69,30 +69,77 @@ nav {
     box-shadow: 0 0 10px var(--accent-green);
 }
 
-/* Styling Tombol Menu Garis Tiga (Hamburger) */
-.menu-toggle {
-    display: none;
-    font-size: 1.5rem;
-    color: var(--accent-blue);
-    cursor: pointer;
-    z-index: 101;
+.nav-controls {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
+/* Styling Tombol Menu Garis Tiga (Hamburger) */
+.menu-toggle {
+    display: block; /* Selalu ditampilkan */
+    font-size: 1.6rem;
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 1001;
+}
+
+.menu-toggle:hover {
+    color: var(--accent-blue);
+}
+
+/* Styling Daftar Menu (Dropdown) */
 .nav-links {
+    position: absolute;
+    top: 100%;
+    right: 8%;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
     display: flex;
-    gap: 2rem;
+    flex-direction: column;
+    gap: 0;
+    min-width: 220px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
     list-style: none;
+    
+    /* Disembunyikan secara default menggunakan animasi */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-15px);
+    transition: all 0.3s ease;
+}
+
+/* Memunculkan menu saat di-klik */
+.nav-links.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(10px);
+}
+
+.nav-links li {
+    width: 100%;
 }
 
 .nav-links a {
+    display: block;
+    padding: 14px 20px;
     color: var(--text-secondary);
     text-decoration: none;
     font-size: 0.95rem;
     transition: 0.3s;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.nav-links li:last-child a {
+    border-bottom: none;
 }
 
 .nav-links a:hover {
+    background: rgba(0, 240, 255, 0.1);
     color: var(--accent-blue);
+    padding-left: 26px; /* Animasi bergeser ke kanan saat disentuh */
 }
 
 /* Hero Section */
@@ -507,6 +554,43 @@ nav {
     font-size: 0.95rem;
 }
 
+/* Class utama untuk menyembunyikan elemen */
+.hidden-edu-item {
+    display: none !important;
+}
+
+/* Pembungkus Tombol More */
+.edu-toggle-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    position: relative;
+    padding-left: 20px; /* Menyesuaikan agar sejajar dengan garis timeline */
+}
+
+/* Desain Tombol Kapsul More */
+.edu-toggle-btn {
+    background: rgba(0, 240, 255, 0.05);
+    color: var(--accent-blue);
+    border: 1px solid var(--accent-blue);
+    padding: 8px 22px;
+    border-radius: 50px;
+    font-family: var(--font-code);
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.edu-toggle-btn:hover {
+    background: var(--accent-blue);
+    color: var(--bg-color);
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
+    transform: translateY(-2px);
+}
+
 /* --- CUSTOM STYLING FOR CERTIFICATE SIDE BY SIDE --- */
 .cert-split-container {
     display: grid;
@@ -523,6 +607,18 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+}
+
+.duration {
+    color: var(--accent-green); /* Menggunakan variabel warna hijau bawaan tema Anda */
+    font-family: var(--font-code); /* Memakai font monospace agar terlihat seperti koding */
+    font-size: 0.85rem;
+    display: inline-block;
+    margin-bottom: 0.8rem;
+}
+
+.duration i {
+    margin-right: 5px;
 }
 
 /* Tambahan Styling untuk Sub-section Achievement & Training */
@@ -710,32 +806,20 @@ nav {
 }
 
 /* Project Cards */
-.feature-card {
+.project-card {
     background: var(--card-bg);
     border: 1px solid var(--border-color);
     border-radius: 12px;
-    padding: 1.8rem;
-    position: relative;
-    overflow: hidden;
+    overflow: hidden; /* Penting: memotong sudut gambar agar melengkung rapi */
     transition: 0.3s;
+    display: flex;
+    flex-direction: column;
 }
 
-.feature-card:hover {
-    border-color: var(--accent-green);
+.project-card:hover {
+    border-color: var(--accent-blue);
     transform: translateY(-5px);
-}
-
-.feature-card h3 {
-    color: var(--accent-blue);
-    margin-bottom: 0.8rem;
-}
-
-.feature-card .duration {
-    font-family: var(--font-code);
-    font-size: 0.85rem;
-    color: var(--accent-green);
-    margin-bottom: 1rem;
-    display: block;
+    box-shadow: 0 10px 25px rgba(0, 240, 255, 0.1);
 }
 
 .tags {
@@ -757,6 +841,104 @@ nav {
     font-family: var(--font-main);
     color: var(--text-secondary);
     transition: 0.2s;
+}
+
+/* Kotak Slider Gambar */
+.slider-wrapper {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Ubah angka ini (misal 400px atau 450px) untuk membuat kotak menjadi potret/berdiri */
+    overflow: hidden;
+    background: #0a0e17; 
+    border-bottom: 1px solid var(--border-color);
+}
+
+.slider-track {
+    display: flex;
+    height: 100%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.slider-track img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Membuat gambar memenuhi kotak tanpa merusak rasio */
+    flex-shrink: 0;
+}
+
+/* Tombol Navigasi Prev/Next */
+.slide-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(10, 14, 23, 0.6);
+    color: var(--text-primary);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    z-index: 2;
+    backdrop-filter: blur(2px);
+}
+
+.slide-btn:hover {
+    background: var(--accent-blue);
+    color: var(--bg-color);
+    border-color: var(--accent-blue);
+}
+
+.prev-btn { left: 10px; }
+.next-btn { right: 10px; }
+
+/* Indikator Titik (Dots) */
+.slider-dots {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 6px;
+    z-index: 2;
+}
+
+.slider-dots .dot {
+    width: 8px;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.slider-dots .dot.active {
+    background: var(--accent-blue);
+    width: 16px; /* Titik yang aktif menjadi bentuk kapsul kecil */
+    border-radius: 4px;
+}
+
+/* Bagian Teks di Bawah Gambar */
+.project-content {
+    padding: 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-content h3 {
+    color: var(--accent-blue);
+    margin-bottom: 0.8rem;
+    font-size: 1.25rem;
+}
+
+.project-content p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    flex: 1; /* Mendorong tags ke bagian paling bawah secara rapi */
 }
 
 /* --- CUSTOM STYLING FOR CERTIFICATE BUTTONS --- */
@@ -805,6 +987,43 @@ nav {
     font-family: 'Font Awesome 6 Free';
     font-weight: 900;
     color: var(--accent-green);
+}
+
+/* --- KEMBALIKAN FRAME UNTUK KARTU SERTIFIKAT --- */
+.feature-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 1.8rem;
+    border-radius: 12px;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Agar tinggi kartu seragam jika berjejer */
+}
+
+.feature-card:hover {
+    border-color: var(--accent-blue);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 240, 255, 0.1);
+}
+
+/* Memastikan tag dan tombol sertifikat terdorong ke bawah dengan rapi */
+.feature-card p {
+    flex: 1; 
+    margin-bottom: 1.5rem;
+}
+
+/* --- CUSTOM STYLING FOR CERTIFICATE TOGGLE --- */
+.hidden-cert-item {
+    display: none !important;
+}
+
+.cert-toggle-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    width: 100%;
+    grid-column: 1 / -1; /* Penting: Membuat tombol berada di tengah bawah jika menggunakan CSS Grid */
 }
 
 /* Footer */
@@ -878,18 +1097,46 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 900px) {
+    /* Sesuaikan ukuran navbar agar tidak sesak di HP */
+    nav {
+        padding: 1.2rem 5%;
+    }
+
+    .logo {
+        font-size: 1.1rem; /* Memperkecil logo sedikit agar tidak bertabrakan dengan tombol menu */
+    }
+
+    .nav-controls {
+        gap: 15px; /* Sedikit merapatkan jarak antara pilihan bahasa dan tombol garis tiga */
+    }
+
+    /* Membuat ukuran dropdown menu memanjang penuh di layar HP */
+    .nav-links {
+        right: 5%;
+        left: 5%;
+        width: 90%;
+        min-width: unset;
+        text-align: center; /* Mengetengahkan teks menu agar lebih rapi di HP */
+    }
+
+    .nav-links a:hover {
+        padding-left: 20px; /* Kurangi efek geser agar teks tetap di tengah saat disentuh */
+    }
+
+    /* Penyesuaian konten Hero (Profil) di layar kecil */
     .hero {
         flex-direction: column-reverse;
         text-align: center;
-        padding-top: 7rem;
+        padding-top: 8rem;
+        gap: 2rem;
     }
 
     .hero-text p {
         margin: 0 auto 2rem auto;
     }
 
-    .nav-links {
-        display: none;
+    .hero-actions {
+        justify-content: center; /* Mengetengahkan tombol Unduh CV & Hubungi Saya */
     }
 
     .cert-split-container {
@@ -897,21 +1144,24 @@ footer {
     }
 }
 
-@media (max-width: 500px) {
+/* Responsivitas tambahan untuk layar HP yang sangat kecil (di bawah 600px) */
+@media (max-width: 600px) {
     .laptop-container {
-        transform: scale(0.75);
+        transform: scale(0.65); /* Mengecilkan ukuran laptop mockup agar tidak terpotong */
         transform-origin: center;
     }
-}
-
-@media (max-width: 600px) {
+    
+    /* Memindah posisi logo Instansi/Perusahaan ke atas teks */
     .edu-item, .experience-item {
-        flex-direction: column; /* Mengubah logo berada di atas teks pada layar HP */
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
         gap: 1rem;
     }
+
     .edu-logo, .experience-logo {
-        width: 65px;
-        height: 65px;
+        width: 70px;
+        height: 70px;
     }
 }
 
