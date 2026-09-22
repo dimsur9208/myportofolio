@@ -1,21 +1,46 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Smooth scrolling untuk menu navigasi internal
-    const navLinks = document.querySelectorAll('.nav-links a');
-    
-    navLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href');
-            const targetSection = document.querySelector(targetId);
+    // Logika Hamburger Menu (Garis Tiga)
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navLinksList = document.getElementById('nav-links');
+
+    if (mobileMenu && navLinksList) {
+        // Toggle menu saat ikon hamburger diklik
+        mobileMenu.addEventListener('click', function(e) {
+            e.stopPropagation(); // Mencegah event klik bocor
+            navLinksList.classList.toggle('active');
             
-            if (targetSection) {
-                window.scrollTo({
-                    top: targetSection.offsetTop - 70,
-                    behavior: 'smooth'
-                });
+            // Ubah ikon dari garis tiga (bars) ke tanda silang (xmark)
+            const icon = mobileMenu.querySelector('i');
+            if (navLinksList.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
             }
         });
-    });
+
+        // Menutup menu secara otomatis jika salah satu link menu diklik
+        const navItems = navLinksList.querySelectorAll('a');
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                navLinksList.classList.remove('active');
+                const icon = mobileMenu.querySelector('i');
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            });
+        });
+
+        // Menutup menu secara otomatis saat mengklik layar di luar menu
+        window.addEventListener('click', function(e) {
+            if (navLinksList.classList.contains('active') && !e.target.closest('#nav-links') && !e.target.closest('#mobile-menu')) {
+                navLinksList.classList.remove('active');
+                const icon = mobileMenu.querySelector('i');
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        });
+    }
 
     // Logika Klik untuk Dropdown Contact Me
     const contactBtn = document.getElementById('contactBtn');
@@ -66,6 +91,8 @@ document.addEventListener("DOMContentLoaded", () => {
             },
             "education": {
                 "title": "Pendidikan",
+                "btn_more": "Tampilkan Lebih Banyak... <i class='fa-solid fa-chevron-down'></i>",
+                "btn_less": "Sembunyikan <i class='fa-solid fa-chevron-up'></i>",
                 "items": [
                     {
                         "logo": "All Dokumen/img/pnj.png",
@@ -290,6 +317,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 "training_title": "Pelatihan & Organisasi",
                 "btn_preview": "Pratinjau Sertifikat",
                 "btn_download": "Unduh Sertifikat",
+                "btn_more": "Tampilkan Lebih Banyak... <i class='fa-solid fa-chevron-down'></i>",
+                "btn_less": "Sembunyikan <i class='fa-solid fa-chevron-up'></i>",
                 "achievements": [
                     {
                         "title": "Juara Harapan 2 - Lomba Cyber Security (Tingkat Jakarta Timur 1)",
@@ -359,20 +388,20 @@ document.addEventListener("DOMContentLoaded", () => {
                 ]
             },
             "projects": {
-                "title": "Proyek Saya",
+                "title": "Projek Saya",
                 "items": [
-                    { "title": "Smart Digital Clock (NTP)", "description": "Jam digital berbasis ESP32-C3 yang tersinkronisasi via Network Time Protocol. Menggunakan matriks LED MD_Parola berpola 5x8 dengan fitur alarm berkedip terus-menerus saat timer habis.", "tags": ["ESP32-C3", "NTP", "Dot Matrix"] },
-                    { "title": "Lampu Sein ESP32C3 Core", "description": "Sistem kontrol sein kendaraan interaktif berbasis web lokal. Dilengkapi UI dashboard kustom dengan tombol \"Play\" dan \"Pause\" berbentuk kapsul (capsule shape) dengan presisi ukuran simetris.", "tags": ["HTML/CSS", "IoT Web", "mDNS"] },
-                    { "title": "Dual-Band Microstrip Antenna", "description": "Perhitungan dan simulasi antena loop untuk aplikasi komunikasi nirkabel (Wi-Fi) yang beroperasi secara stabil pada dua frekuensi: 2.4 GHz dan 5 GHz.", "tags": ["CST Studio", "RF Engineering"] },
-                    { "title": "MATLAB ADC & Trellis Analysis", "description": "Pengembangan syntax MATLAB untuk mensimulasikan pemrosesan sinyal telekomunikasi, mencakup proses sampling, kuantisasi ADC, serta visualisasi diagram Trellis.", "tags": ["MATLAB", "Signal Processing"] },
-                    { "title": "High-Density FTTx Design", "description": "Perancangan topologi jaringan serat optik untuk area padat (FTTH/FTTB) dengan kalkulasi Link Budget mendalam dan pemilihan spesifikasi Duct serta G.652D.", "tags": ["Fiber Optic", "Network Planning"] },
-                    { "title": "Enterprise Data Center Migration", "description": "Melakukan migrasi infrastruktur fisik ke arsitektur High Availability (HA) tingkat enterprise tanpa waktu henti operasional (zero downtime).", "tags": ["Cisco Nexus", "BGP"] },
-                    { "title": "Multi-Branch SD-WAN", "description": "Menghubungkan jaringan di berbagai kantor cabang dengan penerapan enkripsi IPsec penuh dan manajemen distribusi beban lalu lintas (load balancing) terpusat.", "tags": ["MikroTik", "IPsec VPN"] },
-                    { "title": "Security Audit & Hardening", "description": "Melakukan uji penetrasi pada arsitektur internal, manajemen keamanan port, serta implementasi autentikasi ketat menggunakan protokol Radius/802.1X.", "tags": ["Wireshark", "802.1X"] },
-                    { "title": "3D Modular IoT Enclosure", "description": "Pemodelan dan perancangan tata letak casing 3D untuk integrasi komponen mikrokontroler dengan penempatan port DC dan USB yang presisi pada sasis elektronik.", "tags": ["AutoCAD", "Hardware Design"] },
-                    { "title": "Automated Environment Monitoring", "description": "Implementasi pembacaan berbagai sensor lingkungan yang dikirimkan secara telemetri ke server sentral untuk ditampilkan dalam grafik dashboard secara real-time.", "tags": ["Telemetry", "Grafana"] },
-                    { "title": "BLE Smart Home Controller", "description": "Perancangan ekosistem rumah pintar dengan jangkauan tertutup menggunakan transmisi Bluetooth Low Energy (BLE) yang hemat daya untuk aktuator saklar lampu.", "tags": ["BLE", "Smart Home"] },
-                    { "title": "PCB Layout Engineering", "description": "Menerjemahkan prototipe sirkuit kabel jumper (breadboard) ke dalam desain layout sirkuit cetak dua lapis menggunakan software EasyEDA/KiCad.", "tags": ["EasyEDA", "PCB Design"] }
+                    { 
+                        "title": "Sistem <i>Smart Doorlock</i> berbasis <i>ESP32</i> (Prototipe)", 
+                        "description": "Berhasil membuat sistem <i>Smart Doorlock</i> berbasis <i>ESP32</i> dengan menggunakan sistem <i>RFID</i> dan <i>Keypad</i>. Projek ini masih bersifat prototipe. Sistem ini dapat membuka akses menggunakan kartu <i>RFID</i> ataupun PIN pada <i>Keypad</i>.", 
+                        "tags": ["<i>Doorlock</i>", "<i>RFID</i>", "<i>Keypad</i>", "IoT", "<i>ESP32</i>", "KSM Psychorobotic"],
+                        "images": ["/All Dokumen/Project/doorlock1.png", "/All Dokumen/Project/doorlock2.png", "/All Dokumen/Project/doorlock3.png"]
+                    },
+                    { 
+                        "title": "Sistem <i>Smart Intelligent Trash Bin Monitoring</i> berbasis <i>ESP32</i> - <i>Project Based Learning (PBL)</i>", 
+                        "description": "Menyelesaikan modul <i>PBL</i> tentang pembuatan sistem <i>Smart Intelligent Trash Bin Monitoring</i> berbasis <i>ESP32</i> untuk mengukur kapasitas tempat sampah dengan menggunakan <i>LoRa</i> sebagai pemancar sinyal (Tx) dan <i>USRP</i> sebagai penerima (Rx). <i>USRP</i> ini dikonfigurasi menggunakan perangkat lunak <i>GNU Radio</i>.", 
+                        "tags": ["Tempat Sampah Pintar", "<i>PBL</i>", "<i>ESP32</i>", "<i>LoRa</i>", "<i>USRP</i>", "<i>GNU Radio</i>", "Kapasitas Sampah"],
+                        "images": ["/All Dokumen/Project/pbl1.png", "/All Dokumen/Project/pbl2.png", "/All Dokumen/Project/pbl3.png", "/All Dokumen/Project/pbl4.png"]
+                    }
                 ]
             },
             "footer": {
@@ -407,6 +436,8 @@ document.addEventListener("DOMContentLoaded", () => {
             },
             "education": {
                 "title": "Education",
+                "btn_more": "Show More... <i class='fa-solid fa-chevron-down'></i>",
+                "btn_less": "Hide <i class='fa-solid fa-chevron-up'></i>",
                 "items": [
                     {
                         "logo": "All Dokumen/img/pnj.png",
@@ -626,11 +657,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 ]
             },
             "certificates": {
-                "title": "Certificate",
+                "title": "Certificates",
                 "achievement_title": "My Achievement",
                 "training_title": "Training & Organization",
                 "btn_preview": "Certificate Preview",
                 "btn_download": "Certificate Download",
+                "btn_more": "Show More... <i class='fa-solid fa-chevron-down'></i>",
+                "btn_less": "Show Less <i class='fa-solid fa-chevron-up'></i>",
                 "achievements": [
                     {
                         "title": "2nd Runner-Up - Cyber Security Competition (East Jakarta 1 Level)",
@@ -700,28 +733,20 @@ document.addEventListener("DOMContentLoaded", () => {
                 ]
             },
             "projects": {
-                "title": "My Project",
+                "title": "My Projects",
                 "items": [
-                    { "title": "Smart Digital Clock (NTP)", "description": "ESP32-C3 based digital clock synchronized via Network Time Protocol. Uses a 5x8 pattern MD_Parola LED matrix with a continuous flashing alarm feature when the timer expires.", "tags": ["ESP32-C3", "NTP", "Dot Matrix"] },
-                    { "title": "Lampu Sein ESP32C3 Core", "description": "Local web-based interactive vehicle turn signal control system. Equipped with a custom dashboard UI featuring capsule-shaped \"Play\" and \"Pause\" buttons with symmetrical size precision.", "tags": ["HTML/CSS", "IoT Web", "mDNS"] },
-                    { "title": "Dual-Band Microstrip Antenna", "description": "Calculation and simulation of loop antennas for wireless communication applications (Wi-Fi) operating stably across two frequencies: 2.4 GHz and 5 GHz.", "tags": ["CST Studio", "RF Engineering"] },
-                    { "title": "MATLAB ADC & Trellis Analysis", "description": "Development of MATLAB syntax to simulate telecommunication signal processing, covering sampling, ADC quantization, and Trellis diagram visualization.", "tags": ["MATLAB", "Signal Processing"] },
-                    { "title": "High-Density FTTx Design", "description": "Fiber optic network topology design for dense areas (FTTH/FTTB) with in-depth Link Budget calculations and specification selection for Ducts and G.652D.", "tags": ["Fiber Optic", "Network Planning"] },
-                    { "title": "Enterprise Data Center Migration", "description": "Migrated physical infrastructure to an enterprise-grade High Availability (HA) architecture with zero operational downtime.", "tags": ["Cisco Nexus", "BGP"] },
-                    {
-                        "title": "Multi-Branch SD-WAN",
-                        "description": "Connected networks across branch offices with full IPsec encryption implementation and centralized load balancing traffic distribution management.",
-                        "tags": ["MikroTik", "IPsec VPN"]
+                    { 
+                        "title": "ESP32-Based Smart Doorlock System (Prototype)", 
+                        "description": "Successfully developed an ESP32-based Smart Doorlock System using RFID and Keypad systems. This project is currently a prototype. This system can open access using an RFID card or PIN on the Keypad.", 
+                        "tags": ["Doorlock", "RFID", "Keypad", "IoT", "ESP32", "Student Study Group (KSM) of Psychorobotic"],
+                        "images": ["/All Dokumen/Project/doorlock1.png", "/All Dokumen/Project/doorlock2.png", "/All Dokumen/Project/doorlock3.png"]
                     },
-                    {
-                        "title": "Security Audit & Hardening",
-                        "description": "Performed penetration testing on internal architecture, port security management, and strict authentication implementation using Radius/802.1X protocols.",
-                        "tags": ["Wireshark", "802.1X"]
-                    },
-                    { "title": "3D Modular IoT Enclosure", "description": "3D modeling and layout design of enclosures for microcontroller component integration with precise DC and USB port placement on the electronic chassis.", "tags": ["AutoCAD", "Hardware Design"] },
-                    { "title": "Automated Environment Monitoring", "description": "Implementation of environmental sensor data readings transmitted via telemetry to a central server for real-time dashboard chart display.", "tags": ["Telemetry", "Grafana"] },
-                    { "title": "BLE Smart Home Controller", "description": "Short-range smart home ecosystem design using low-power Bluetooth Low Energy (BLE) transmission for light switch actuators.", "tags": ["BLE", "Smart Home"] },
-                    { "title": "PCB Layout Engineering", "description": "Translating jumper wire circuit prototypes (breadboards) into double-layer printed circuit layout designs using EasyEDA/KiCad software.", "tags": ["EasyEDA", "PCB Design"] }
+                    { 
+                        "title": "ESP32-Based Smart Intelligent Trash Bin Monitoring - Project Based Learning (PBL)", 
+                        "description": "Complete the PBL module on developed an ESP32-based Smart Intelligent Trash Bin Monitoring system to measure the capacity of trash bins using LoRa as a signal transmitter (Tx) and USRP as a receiver (Rx). This USRP is configured using <i>GNU Radio</i> software.", 
+                        "tags": ["Smart Trash Bin", "PBL", "ESP32", "LoRa", "USRP", "GNU Radio", "Capacity of Bins"],
+                        "images": ["/All Dokumen/Project/pbl1.png", "/All Dokumen/Project/pbl2.png", "/All Dokumen/Project/pbl3.png", "/All Dokumen/Project/pbl4.png"]
+                    }
                 ]
             },
             "footer": {
@@ -775,20 +800,49 @@ document.addEventListener("DOMContentLoaded", () => {
             termContainer.innerHTML = data.hero.terminal_content.map(line => `<div>${line}</div>`).join('');
         }
 
-        // Render Education Timeline
+        // Render Education Timeline (Dengan Fitur Sembunyikan SMP & SD)
         const eduContainer = document.getElementById('education-container');
         if (eduContainer && data.education && data.education.items) {
-            eduContainer.innerHTML = data.education.items.map(item => `
-                <div class="edu-item">
+            // Mengecek apakah tombol 'more' sedang aktif atau tidak
+            const isExpanded = eduContainer.dataset.expanded === 'true';
+
+            let eduHTML = data.education.items.map((item, index) => {
+                // Sembunyikan item index 2 ke atas (SMP dan SD) jika belum diekspansi
+                const hiddenClass = (index >= 2 && !isExpanded) ? 'hidden-edu-item' : '';
+                const collapsibleClass = index >= 2 ? 'collapsible-edu' : '';
+                
+                // Penanganan error jika data detail_title atau points kosong (biasanya di SD/SMP)
+                const detailHTML = item.detail_title ? `<b>${item.detail_title}</b>` : '';
+                const pointsHTML = item.points ? item.points.map(pt => `<br>- ${pt}`).join('') : '';
+
+                return `
+                <div class="edu-item ${collapsibleClass} ${hiddenClass}">
                     ${item.logo ? `<img src="${item.logo}" alt="Logo ${item.institution}" class="edu-logo" onerror="this.style.display='none'">` : ''}
                     <div class="edu-content">
                         <span class="edu-duration"><i class="fas fa-calendar-alt"></i> ${item.duration}</span>
                         <h3>${item.institution}</h3>
-                        <p><b>${item.detail_title}</b>
-                            ${item.points.map(pt => `<br>- ${pt}`).join('')}</p>
+                        ${(detailHTML || pointsHTML) ? `<p>${detailHTML}${pointsHTML}</p>` : ''}
                     </div>
                 </div>
-            `).join('');
+                `;
+            }).join('');
+
+            // Tambahkan tombol "More" jika jumlah pendidikan lebih dari 2
+            if (data.education.items.length > 2) {
+                const btnText = isExpanded ? data.education.btn_less : data.education.btn_more;
+                eduHTML += `
+                <div class="edu-toggle-wrapper">
+                    <button class="edu-toggle-btn" 
+                            data-more="${data.education.btn_more}" 
+                            data-less="${data.education.btn_less}" 
+                            onclick="toggleEducation(this)">
+                        ${btnText}
+                    </button>
+                </div>
+                `;
+            }
+
+            eduContainer.innerHTML = eduHTML;
         }
 
         // Render Experience Timeline (Penomoran poin dimulai dari angka 1)
@@ -838,11 +892,19 @@ document.addEventListener("DOMContentLoaded", () => {
             `).join('');
         }
 
-        // Render Achievements
+        // Render Achievements (Dengan Fitur Sembunyikan/More)
         const achContainer = document.getElementById('achievements-container');
         if (achContainer && data.certificates && data.certificates.achievements) {
-            achContainer.innerHTML = data.certificates.achievements.map(ach => `
-                <div class="feature-card">
+            const isExpanded = achContainer.dataset.expanded === 'true';
+
+            let achHTML = data.certificates.achievements.map((ach, index) => {
+                // ANGKANYA DI SINI: index >= 1 berarti menyembunyikan sertifikat ke-2 dan seterusnya. 
+                // Jika Sertifikat UN Anda ada di urutan ke-3, ubah menjadi index >= 2
+                const hiddenClass = (index >= 3 && !isExpanded) ? 'hidden-cert-item' : '';
+                const collapsibleClass = index >= 3 ? 'collapsible-cert' : '';
+
+                return `
+                <div class="feature-card ${collapsibleClass} ${hiddenClass}">
                     <h3>${ach.title}</h3>
                     <p class="author-subtitle"><b>${ach.author}</b></p>
                     <span class="duration"><i class="fas fa-calendar-alt"></i> ${ach.duration}</span>
@@ -857,7 +919,26 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                     ` : ''}
                 </div>
-            `).join('');
+                `;
+            }).join('');
+
+            // Memunculkan tombol "More" jika sertifikat prestasi lebih dari 1
+            if (data.certificates.achievements.length > 1) {
+                const btnText = isExpanded ? data.certificates.btn_less : data.certificates.btn_more;
+                achHTML += `
+                <div class="cert-toggle-wrapper">
+                    <!-- Kita menggunakan class edu-toggle-btn agar desain tombolnya seragam dengan Pendidikan -->
+                    <button class="edu-toggle-btn" 
+                            data-more="${data.certificates.btn_more}" 
+                            data-less="${data.certificates.btn_less}" 
+                            onclick="toggleAchievements(this)">
+                        ${btnText}
+                    </button>
+                </div>
+                `;
+            }
+
+            achContainer.innerHTML = achHTML;
         }
 
         // Render Trainings
@@ -882,18 +963,49 @@ document.addEventListener("DOMContentLoaded", () => {
             `).join('');
         }
 
-        // Render Projects
+        // Render Projects dengan Image Slider
         const projContainer = document.getElementById('projects-container');
         if (projContainer && data.projects && data.projects.items) {
-            projContainer.innerHTML = data.projects.items.map(proj => `
-                <div class="feature-card">
-                    <h3>${proj.title}</h3>
-                    <p>${proj.description}</p>
-                    <div class="tags">
-                        ${proj.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+            
+            // Inisialisasi index slider secara global untuk setiap proyek
+            window.slideIndices = window.slideIndices || {};
+
+            projContainer.innerHTML = data.projects.items.map((proj, idx) => {
+                window.slideIndices[idx] = 0; // Set slide pertama = 0
+                const hasMultipleImages = proj.images && proj.images.length > 1;
+                
+                // Men-generate elemen img untuk setiap gambar
+                const imagesHTML = proj.images ? proj.images.map(img => `<img src="${img}" alt="${proj.title}" onerror="this.style.display='none'">`).join('') : '';
+
+                return `
+                <div class="project-card">
+                    <!-- Bagian Foto / Slider -->
+                    <div class="slider-wrapper">
+                        <div class="slider-track" id="slider-track-${idx}">
+                            ${imagesHTML}
+                        </div>
+                        
+                        <!-- Tombol Navigasi Slider (Hanya muncul jika gambar > 1) -->
+                        ${hasMultipleImages ? `
+                        <button class="slide-btn prev-btn" onclick="moveSlide(${idx}, -1)"><i class="fa-solid fa-chevron-left"></i></button>
+                        <button class="slide-btn next-btn" onclick="moveSlide(${idx}, 1)"><i class="fa-solid fa-chevron-right"></i></button>
+                        <div class="slider-dots" id="slider-dots-${idx}">
+                            ${proj.images.map((_, i) => `<span class="dot ${i === 0 ? 'active' : ''}"></span>`).join('')}
+                        </div>
+                        ` : ''}
+                    </div>
+
+                    <!-- Bagian Konten Teks -->
+                    <div class="project-content">
+                        <h3>${proj.title}</h3>
+                        <p>${proj.description}</p>
+                        <div class="tags">
+                            ${proj.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                        </div>
                     </div>
                 </div>
-            `).join('');
+                `;
+            }).join('');
         }
 
         // Update Footer
@@ -909,3 +1021,84 @@ document.addEventListener("DOMContentLoaded", () => {
         return path.split('.').reduce((acc, part) => acc && acc[part], obj);
     }
 });
+
+// Fungsi Global untuk Menyembunyikan/Menampilkan Pendidikan
+window.toggleEducation = function(btn) {
+    const eduContainer = document.getElementById('education-container');
+    const isExpanded = eduContainer.dataset.expanded === 'true';
+    
+    // Balikkan statusnya
+    eduContainer.dataset.expanded = !isExpanded;
+    
+    // Tampilkan atau sembunyikan elemen SMP dan SD
+    const items = eduContainer.querySelectorAll('.collapsible-edu');
+    items.forEach(item => {
+        if (isExpanded) {
+            item.classList.add('hidden-edu-item'); // Sembunyikan
+        } else {
+            item.classList.remove('hidden-edu-item'); // Tampilkan
+        }
+    });
+    
+    // Ganti teks tombol (More -> Less, Less -> More)
+    if (isExpanded) {
+        btn.innerHTML = btn.getAttribute('data-more');
+    } else {
+        btn.innerHTML = btn.getAttribute('data-less');
+    }
+};
+
+// Fungsi Global untuk Menggeser Slide Project
+window.moveSlide = function(projectIdx, direction) {
+    const track = document.getElementById(`slider-track-${projectIdx}`);
+    if (!track) return;
+
+    const totalSlides = track.children.length;
+    if (totalSlides <= 1) return;
+
+    let currentIndex = window.slideIndices[projectIdx] || 0;
+    currentIndex += direction;
+
+    // Looping slide (jika sampai ujung, kembali ke awal)
+    if (currentIndex >= totalSlides) currentIndex = 0;
+    if (currentIndex < 0) currentIndex = totalSlides - 1;
+
+    window.slideIndices[projectIdx] = currentIndex;
+
+    // Geser track gambar (100% per gambar)
+    track.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+    // Update indikator titik (dots) di bawah gambar
+    const dotsContainer = document.getElementById(`slider-dots-${projectIdx}`);
+    if (dotsContainer) {
+        Array.from(dotsContainer.children).forEach((dot, i) => {
+            dot.classList.toggle('active', i === currentIndex);
+        });
+    }
+};
+
+// Fungsi Global untuk Menyembunyikan/Menampilkan Sertifikat Prestasi
+window.toggleAchievements = function(btn) {
+    const achContainer = document.getElementById('achievements-container');
+    const isExpanded = achContainer.dataset.expanded === 'true';
+    
+    // Balikkan statusnya
+    achContainer.dataset.expanded = !isExpanded;
+    
+    // Tampilkan atau sembunyikan sertifikat yang dilabeli collapsible
+    const items = achContainer.querySelectorAll('.collapsible-cert');
+    items.forEach(item => {
+        if (isExpanded) {
+            item.classList.add('hidden-cert-item'); // Sembunyikan
+        } else {
+            item.classList.remove('hidden-cert-item'); // Tampilkan
+        }
+    });
+    
+    // Ganti teks tombol (More -> Less, Less -> More)
+    if (isExpanded) {
+        btn.innerHTML = btn.getAttribute('data-more');
+    } else {
+        btn.innerHTML = btn.getAttribute('data-less');
+    }
+};
