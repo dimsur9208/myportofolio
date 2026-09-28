@@ -1101,4 +1101,48 @@ window.toggleAchievements = function(btn) {
     } else {
         btn.innerHTML = btn.getAttribute('data-less');
     }
+
+// Fungsi Global untuk Redirect Email (Terisi Otomatis / Interaktif)
+window.openEmail = function(provider, emailAddress) {
+    // 1. Siapkan Template Pesan (Karena tidak ada form kontak)
+    var subject = 'Pesan dari Web Portofolio Dimas';
+    var body = 'Halo Dimas,\n\nSaya melihat portofolio Anda dan tertarik untuk berdiskusi lebih lanjut mengenai [sebutkan keperluan Anda].\n\nSalam,\n[Nama Anda]';
+
+    // 2. Deteksi Mobile (Sesuai dengan referensi kode Anda)
+    var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+        if (isMobile) {
+            // --- LOGIKA UNTUK HP (Mobile) ---
+            // Menggunakan mailto bawaan perangkat agar membuka aplikasi email yang ada (Gmail/Mail/Outlook app)
+            var mailtoLink = 'mailto:' + encodeURIComponent(emailAddress) + 
+                            '?subject=' + encodeURIComponent(subject) + 
+                            '&body=' + encodeURIComponent(body);
+                         
+            window.location.href = mailtoLink;
+        
+        } else {
+            // --- LOGIKA UNTUK LAPTOP / DESKTOP (Web) ---
+            var url = '';
+        
+            if (provider === 'gmail') {
+               // Buka halaman compose Gmail web (Menggunakan parameter &su= untuk subject)
+               url = 'https://mail.google.com/mail/?view=cm&fs=1' + 
+                      '&to=' + encodeURIComponent(emailAddress) + 
+                      '&su=' + encodeURIComponent(subject) + 
+                      '&body=' + encodeURIComponent(body);
+                  
+            } else if (provider === 'outlook') {
+                // Buka halaman compose Outlook web (Menggunakan parameter &subject=)
+                url = 'https://outlook.live.com/mail/0/deeplink/compose' + 
+                      '?to=' + encodeURIComponent(emailAddress) + 
+                      '&subject=' + encodeURIComponent(subject) + 
+                      '&body=' + encodeURIComponent(body);
+            }
+        
+            // Buka link web di tab baru
+            if (url) {
+                window.open(url, '_blank');
+            }
+        }
+    };
 };
