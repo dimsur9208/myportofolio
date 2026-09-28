@@ -205,7 +205,8 @@ document.addEventListener("DOMContentLoaded", () => {
                             { "name": "VirtualBox", "logo": "/All Dokumen/img/virtualbox.png" },
                             { "name": "Windows", "logo": "/All Dokumen/img/windows.png" },
                             { "name": "PuTTY", "logo": "/All Dokumen/img/putty.png" },
-                            { "name": "TP-Link", "logo": "/All Dokumen/img/tplink.png" }
+                            { "name": "TP-Link", "logo": "/All Dokumen/img/tplink.png" },
+                            { "name": "Jaringan Lokal (LAN, MAN, WAN, VLAN)", "logo": "fa-globe" },
                         ]
                     },
                     {
@@ -213,15 +214,13 @@ document.addEventListener("DOMContentLoaded", () => {
                         "tools": [
                             { "name": "Axcence NetTools", "logo": "/All Dokumen/img/nettools.png" },
                             { "name": "Radio Mobile", "logo": "/All Dokumen/img/radiomobile.png" },
-                            { "name": "Mikrotik", "logo": "/All Dokumen/img/mikrotik.png" },
                             { "name": "Google Earth", "logo": "/All Dokumen/img/gearthpro.png" },
                             { "name": "Fiber Optik", "logo": "/All Dokumen/img/fo.png" },
                             { "name": "Antena", "logo": "/All Dokumen/img/antenna.png" },
-                            { "name": "Jaringan Lokal (LAN, MAN, WAN, VLAN)", "logo": "fa-globe" }
                         ]
                     },
                     {
-                        "title": "<i>Web Server</i> & Pemrograman",
+                        "title": "<em>Web Server</em> & Pemrograman",
                         "tools": [
                             { "name": "Debian", "logo": "/All Dokumen/img/debian.png" },
                             { "name": "Ubuntu", "logo": "/All Dokumen/img/ubuntu.png" },
@@ -236,6 +235,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         "title": "Pengalamatan IP Jaringan",
                         "tools": [
                             { "name": "Mikrotik", "logo": "/All Dokumen/img/mikrotik.png" },
+                            { "name": "Cisco", "logo": "/All Dokumen/img/cisco2.png" },
                             { "name": "Router", "logo": "fa-network-wired" },
                             { "name": "Access Point", "logo": "fa-wifi" },
                             { "name": "Komputer/Laptop", "logo": "fa-desktop" },
@@ -252,12 +252,11 @@ document.addEventListener("DOMContentLoaded", () => {
                         ]
                     },
                     {
-                        "title": "<i>Routing & Switching</i>",
+                        "title": "<em>Routing & Switching</em>",
                         "tools": [
                             { "name": "Cisco Packet Tracer", "logo": "/All Dokumen/img/cisco.png" },
                             { "name": "Cisco", "logo": "/All Dokumen/img/cisco2.png" },
                             { "name": "Mikrotik", "logo": "/All Dokumen/img/mikrotik.png" },
-                            { "name": "Debian", "logo": "/All Dokumen/img/debian.png" },
                             { "name": "Windows", "logo": "/All Dokumen/img/windows.png" },
                             { "name": "TP-Link", "logo": "/All Dokumen/img/tplink.png" },
                             { "name": "Tenda", "logo": "/All Dokumen/img/tenda.png" }
@@ -276,18 +275,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         ]
                     },
                     {
-                        "title": "Desain Elektronika, Desain <i>PCB</i> & Simulasi",
-                        "tools": [
-                            { "name": "Protel", "logo": "/All Dokumen/img/protel.png" },
-                            { "name": "AutoCAD", "logo": "/All Dokumen/img/autocad.png" },
-                            { "name": "SketchUp", "logo": "/All Dokumen/img/sketchup.png" },
-                            { "name": "KiCad", "logo": "/All Dokumen/img/kicad.png" },
-                            { "name": "EasyEDA", "logo": "/All Dokumen/img/easyeda.png" },
-                            { "name": "CST Studio", "logo": "/All Dokumen/img/cst.png" }
-                        ]
-                    },
-                    {
-                        "title": "Mikrokontroler & <i>IoT</i>",
+                        "title": "Mikrokontroler & <em>IoT</em>",
                         "tools": [
                             { "name": "Arduino", "logo": "/All Dokumen/img/arduino.png" },
                             { "name": "C++ (Arduino IDE)", "logo": "/All Dokumen/img/c++.png" },
@@ -301,12 +289,6 @@ document.addEventListener("DOMContentLoaded", () => {
                             { "name": "", "logo": "fa-microchip" },
                             { "name": "", "logo": "fa-screwdriver-wrench" },
                             { "name": "", "logo": "fa-desktop" }
-                        ]
-                    },
-                    {
-                        "title": "Pemrosesan Sinyal Digital",
-                        "tools": [
-                            { "name": "MATLAB", "logo": "/All Dokumen/img/matlab.png" }
                         ]
                     }
                 ]
@@ -453,7 +435,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     {
                         "logo": "All Dokumen/img/smkn7jkt.png",
                         "duration": "2021 - 2024 (GRADUATED)",
-                        "institution": "SMK Negeri 7 Jakarta - East Jakarta",
+                        "institution": "State Vocational High School of 7 Jakarta - East Jakarta",
                         "detail_title": "Average Report Grade : 85.11",
                         "points": [
                             "Completed various practical modules and network simulations (LAN, MAN, WAN, VLAN, PBX, Mikrotik).",
@@ -467,7 +449,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     {
                         "logo": "All Dokumen/img/smpn117jkt.png",
                         "duration": "2018 - 2021 (GRADUATED)",
-                        "institution": "SMP Negeri 117 Jakarta - East Jakarta",
+                        "institution": "State Junior High School of 117 Jakarta - East Jakarta",
                         "detail_title": "Average Report Grade : 91.5",
                         "points": [
                             "Actively participated in school classes."
@@ -476,11 +458,11 @@ document.addEventListener("DOMContentLoaded", () => {
                     {
                         "logo": "All Dokumen/img/sdnpb04.png",
                         "duration": "2012 - 2018 (GRADUATED)",
-                        "institution": "SDN Pondok Bambu 04 - East Jakarta",
+                        "institution": "State Elementary School of Pondok Bambu 04 - East Jakarta",
                         "detail_title": "Average Report Grade : 80.20 | National Exam Average : 81.30",
                         "points": [
                             "Actively participated in school classes.",
-                            "Achieved 1st Place for Highest National Exam Score at SDN Pondok Bambu 04 with a total score of 25.64 and average national exam score of 85.46."
+                            "Achieved 1st Place for Highest National Exam Score at State Elementary School of Pondok Bambu 04 with a total score of 25.64 and average national exam score of 85.46."
                         ]
                     }
                 ]
@@ -550,7 +532,8 @@ document.addEventListener("DOMContentLoaded", () => {
                             { "name": "VirtualBox", "logo": "/All Dokumen/img/virtualbox.png" },
                             { "name": "Windows", "logo": "/All Dokumen/img/windows.png" },
                             { "name": "PuTTY", "logo": "/All Dokumen/img/putty.png" },
-                            { "name": "TP-Link", "logo": "/All Dokumen/img/tplink.png" }
+                            { "name": "TP-Link", "logo": "/All Dokumen/img/tplink.png" },
+                            { "name": "Local Network (LAN, MAN, WAN, VLAN)", "logo": "fa-globe" }
                         ]
                     },
                     {
@@ -558,11 +541,9 @@ document.addEventListener("DOMContentLoaded", () => {
                         "tools": [
                             { "name": "Axcence NetTools", "logo": "/All Dokumen/img/nettools.png" },
                             { "name": "Radio Mobile", "logo": "/All Dokumen/img/radiomobile.png" },
-                            { "name": "Mikrotik", "logo": "/All Dokumen/img/mikrotik.png" },
                             { "name": "Google Earth", "logo": "/All Dokumen/img/gearthpro.png" },
                             { "name": "Fiber Optic", "logo": "/All Dokumen/img/fo.png" },
                             { "name": "Antenna", "logo": "/All Dokumen/img/antenna.png" },
-                            { "name": "Local Network (LAN, MAN, WAN, VLAN)", "logo": "fa-globe" }
                         ]
                     },
                     {
@@ -581,6 +562,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         "title": "Network IP Addressing",
                         "tools": [
                             { "name": "Mikrotik", "logo": "/All Dokumen/img/mikrotik.png" },
+                            { "name": "Cisco", "logo": "/All Dokumen/img/cisco2.png" },
                             { "name": "Router", "logo": "fa-network-wired" },
                             { "name": "Access Point", "logo": "fa-wifi" },
                             { "name": "PC/Laptop", "logo": "fa-desktop" },
@@ -602,7 +584,6 @@ document.addEventListener("DOMContentLoaded", () => {
                             { "name": "Cisco Packet Tracer", "logo": "/All Dokumen/img/cisco.png" },
                             { "name": "Cisco", "logo": "/All Dokumen/img/cisco2.png" },
                             { "name": "Mikrotik", "logo": "/All Dokumen/img/mikrotik.png" },
-                            { "name": "Debian", "logo": "/All Dokumen/img/debian.png" },
                             { "name": "Windows", "logo": "/All Dokumen/img/windows.png" },
                             { "name": "TP-Link", "logo": "/All Dokumen/img/tplink.png" },
                             { "name": "Tenda", "logo": "/All Dokumen/img/tenda.png" }
@@ -615,20 +596,9 @@ document.addEventListener("DOMContentLoaded", () => {
                             { "name": "Mikrotik", "logo": "/All Dokumen/img/mikrotik.png" },
                             { "name": "Router", "logo": "fa-network-wired" },
                             { "name": "Access Point", "logo": "fa-wifi" },
-                            { "name": "Fiber Optik", "logo": "/All Dokumen/img/fo.png" },
+                            { "name": "Fiber Optic", "logo": "/All Dokumen/img/fo.png" },
                             { "name": "Google Earth", "logo": "/All Dokumen/img/gearthpro.png" },
                             { "name": "Radio Mobile", "logo": "/All Dokumen/img/radiomobile.png" }
-                        ]
-                    },
-                    {
-                        "title": "Electronics Design, PCB Design & Simulation",
-                        "tools": [
-                            { "name": "Protel", "logo": "/All Dokumen/img/protel.png" },
-                            { "name": "AutoCAD", "logo": "/All Dokumen/img/autocad.png" },
-                            { "name": "SketchUp", "logo": "/All Dokumen/img/sketchup.png" },
-                            { "name": "KiCad", "logo": "/All Dokumen/img/kicad.png" },
-                            { "name": "EasyEDA", "logo": "/All Dokumen/img/easyeda.png" },
-                            { "name": "CST Studio", "logo": "/All Dokumen/img/cst.png" }
                         ]
                     },
                     {
@@ -647,12 +617,6 @@ document.addEventListener("DOMContentLoaded", () => {
                             { "name": "", "logo": "fa-screwdriver-wrench" },
                             { "name": "", "logo": "fa-desktop" }
                         ]
-                    },
-                    {
-                        "title": "Digital Signal Processing",
-                        "tools": [
-                            { "name": "MATLAB", "logo": "/All Dokumen/img/matlab.png" }
-                        ]
                     }
                 ]
             },
@@ -667,7 +631,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 "achievements": [
                     {
                         "title": "2nd Runner-Up - Cyber Security Competition (East Jakarta 1 Level)",
-                        "author": "by LKS SMK",
+                        "author": "by LKS SMK (State Vocational High School)",
                         "duration": "August 2023 | CERTIFIED",
                         "description": "Successfully completed the <i>LKS SMK</i> module on web server installation and configuration of a web server as protection against cyberattacks by CentOS based and Kali Linux OS as web server attacker.",
                         "tags": ["Cyber Security", "Networking", "Installation & Configuration"],
@@ -685,7 +649,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     },
                     {
                         "title": "BNSP Competency Certificate in Computer & Network Engineering",
-                        "author": "by LSP SMK Negeri 7 Jakarta",
+                        "author": "by LSP State Vocational High School of 7 Jakarta",
                         "duration": "May 2024 (valid for 3 Years) | CERTIFIED",
                         "description": "Successfully completed the BNSP module on network planning and implementation using Cisco Packet Tracer as network design and MikroTik as practical testing. The certification status is COMPETENT.",
                         "tags": ["Networking", "Networking Plaining", "Mikrotik", "Cisco Packet Tracer", "Configuration", "LAN", "VLAN"],
@@ -694,9 +658,9 @@ document.addEventListener("DOMContentLoaded", () => {
                     },
                     {
                         "title": "1st Place Highest National Exam Score across Elementary School of <i>Pondok Bambu 04</i>",
-                        "author": "by Elementary School of <i>Pondok Bambu 04</i>",
+                        "author": "by State Elementary School of <i>Pondok Bambu 04</i>",
                         "duration": "June 2018 | CERTIFIED",
-                        "description": "Achieved 1st place for the highest National Exam (UN/USBN) score at Elementary School of <i>Pondok Bambu 04</i>, with a total score (NEM) of 25.64.",
+                        "description": "Achieved 1st place for the highest National Exam (UN/USBN) score at State Elementary School of <i>Pondok Bambu 04</i>, with a total score (NEM) of 25.64.",
                         "tags": ["National Exam", "School National-Based Exam"],
                         "file": "/All Dokumen/Sertifikat/Prestasi (Umum)/Dimas S - Sertifikat USBN Juara 1.pdf",
                         "preview_link": "https://drive.google.com/file/d/1sv7BViMg_AfkRFsgeY5neBikXwNcNjwv/view?usp=drive_link"
